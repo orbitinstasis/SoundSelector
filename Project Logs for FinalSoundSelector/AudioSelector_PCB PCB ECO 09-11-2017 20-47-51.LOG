@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=L1 Old Footprint=1210 New Footprint=1210_2
+Change Component Footprint: Designator=L2 Old Footprint=1210 New Footprint=1210_2
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

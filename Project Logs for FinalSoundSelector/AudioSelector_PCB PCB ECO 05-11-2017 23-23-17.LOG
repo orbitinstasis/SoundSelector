@@ -1,0 +1,19 @@
+Added Component: Designator=D20(LED_5MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R60(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=DGND Pin=D20-K
+Added Pin To Net: NetName=5V Pin=R60-1
+Added Pin To Net: NetName=NetD20_A Pin=D20-A
+Added Pin To Net: NetName=NetD20_A Pin=R60-2
+Added Net: Name=NetD20_A
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component D20 Schottky
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component P3 Header 4
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component R60 2K
+Added Room: Name=Final_Audio_Selector_board

@@ -1,0 +1,12 @@
+Added Component: Designator=R42(RK27-DUAL-UNIT)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=IN_GND Pin=R42-A_1
+Added Pin To Net: NetName=IN_GND Pin=R42-A_2
+Added Pin To Net: NetName=IN_L Pin=R42-B_1
+Added Pin To Net: NetName=IN_R Pin=R42-B_2
+Added Pin To Net: NetName=MOTOR_OUT_1 Pin=R42-M_1
+Added Pin To Net: NetName=MOTOR_OUT_2 Pin=R42-M_2
+Added Pin To Net: NetName=OUT_L Pin=R42-W_1
+Added Pin To Net: NetName=OUT_R Pin=R42-W_2
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component R42 Motorised Pot

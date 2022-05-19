@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=NetL1_2 Pin=TP1-1
+Change Component Comment : Designator=TP1 Old Comment=Toslink Rx Power New Comment=Toslink TP
+Added Pin To Net: NetName=TOSLINK Pin=TP1-1

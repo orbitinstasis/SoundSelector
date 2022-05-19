@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=MCU_Rx Pin=J5-2
+Removed Pin From Net: NetName=MCU_Tx Pin=J5-3
+Added Pin To Net: NetName=MCU_Tx Pin=J5-2
+Added Pin To Net: NetName=MCU_Rx Pin=J5-3
+Added Pin To Net: NetName=DGND Pin=J5-5
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

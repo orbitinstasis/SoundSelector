@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=D9 NewDesignator=WIFI
+Change Net Name : Old Net Name=NetD9_A New Net Name=NetP1_2
+Change Net Name : Old Net Name=NetD9_K New Net Name=NetP1_1
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

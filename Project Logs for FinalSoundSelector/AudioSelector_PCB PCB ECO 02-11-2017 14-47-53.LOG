@@ -1,0 +1,1616 @@
+Added Component: Designator=AUDIO_OUT1(HDR1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=C1(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C2(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.025"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C3(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.025"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C4(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C5(CPOL-RADIAL-5MM-10MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-09538"; VariantName = "[No Variations]"
+Added Component: Designator=C6(CPOL-RADIAL-5MM-10MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-09538"; VariantName = "[No Variations]"
+Added Component: Designator=C7(CPOL-RADIAL-5MM-10MM)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-09538"; VariantName = "[No Variations]"
+Added Component: Designator=C8(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.025"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C9(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C10(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C11(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.025"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C12(3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-00811"; VariantName = "[No Variations]"
+Added Component: Designator=C13(3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-00811"; VariantName = "[No Variations]"
+Added Component: Designator=C14(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.025"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C15(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C16(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C17(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C18(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C19(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C20(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C21(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C22(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C23(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C24(3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-00811"; VariantName = "[No Variations]"
+Added Component: Designator=C25(3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-00811"; VariantName = "[No Variations]"
+Added Component: Designator=C26(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C27(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C28(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C29(C0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "2.2uF / 25 VDC / X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "TMK212B7225KG-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "963-TMK212B7225KG-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Capacitor"; VariantName = "[No Variations]"
+Added Component: Designator=C30(C0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "2.2uF / 25 VDC / X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "TMK212B7225KG-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "963-TMK212B7225KG-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Capacitor"; VariantName = "[No Variations]"
+Added Component: Designator=C31(3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-00811"; VariantName = "[No Variations]"
+Added Component: Designator=C32(3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-00811"; VariantName = "[No Variations]"
+Added Component: Designator=C33(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C34(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C35(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C36(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C37(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C38(C0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "2.2uF / 25 VDC / X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "TMK212B7225KG-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "963-TMK212B7225KG-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Capacitor"; VariantName = "[No Variations]"
+Added Component: Designator=C39(3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-00811"; VariantName = "[No Variations]"
+Added Component: Designator=C40(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C41(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=C42(3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CAP-00811"; VariantName = "[No Variations]"
+Added Component: Designator=C43(C0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.023"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "ceramic"; VariantName = "[No Variations]"
+Added Component: Designator=D1(LED 0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "orange"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ROHM Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "SML-211DTT86"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "755-SML-211DTT86"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "LED"; VariantName = "[No Variations]"
+Added Component: Designator=D2(LED 0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "orange"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ROHM Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "SML-211DTT86"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "755-SML-211DTT86"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "LED"; VariantName = "[No Variations]"
+Added Component: Designator=D3(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D4(LED_5MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D5(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D6(LED_5MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D7(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D8(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D9(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D10(LED_5MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D11(LED_5MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D12(LED_5MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D13(LED_5MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D14(LED_5MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D15(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D16(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D17(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D18(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D19(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D20(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D21(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D22(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D23(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D24(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D25(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=D26(SOD-323-SILK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "DIO-09646"; VariantName = "[No Variations]"
+Added Component: Designator=DEMP1(PAD-JUMPER-3-2OF3_NC_BY_PASTE_YES_SILK_FULL_BOX)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Digital In1(HDR1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=F1(L0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "600R / 100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "BLM18AG601SN1D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "81-BLM11A601S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Ferrite"; VariantName = "[No Variations]"
+Added Component: Designator=F2(L0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "600R / 100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "BLM18AG601SN1D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "81-BLM11A601S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Ferrite"; VariantName = "[No Variations]"
+Added Component: Designator=F3(L0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "600R / 100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "BLM18AG601SN1D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "81-BLM11A601S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Ferrite"; VariantName = "[No Variations]"
+Added Component: Designator=FILT1(PAD-JUMPER-3-2OF3_NC_BY_PASTE_YES_SILK_FULL_BOX)
+Add component. Clean all parameters for all variants
+Added Component: Designator=HOLE1(M3 STAND OFF - RING)
+Add component. Clean all parameters for all variants
+Added Component: Designator=HOLE2(M3 STAND OFF - RING)
+Add component. Clean all parameters for all variants
+Added Component: Designator=HOLE3(M3 STAND OFF - RING)
+Add component. Clean all parameters for all variants
+Added Component: Designator=HOLE4(M3 STAND OFF - RING)
+Add component. Clean all parameters for all variants
+Added Component: Designator=IC1(SOT23-5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy(%)"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MO-178"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS793475&fileType=pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.ti.com/litv/pdf/mpds018i"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "URL Link1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "Samples URL:http://www.ti.com/product/tps793475#samples"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "SLVS348K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Eco-Plan"; Value = "Green (RoHS & no Sb/Br)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fixed Output Options(V)"; Value = "4.75"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Iout(Max)(A)"; Value = "0.2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Iq(Typ)(mA)"; Value = "0.2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "5-Pin Plastic Small Outline, Body 1.60 × 2.90 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DBV5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "4073253-4/K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "TPS793475DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rating"; Value = "Catalog"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubFamily"; Value = "Single Channel LDO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 4"; Value = "Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 5"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-12160-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "296-12160-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 3"; Value = "296-12160-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 4"; Value = "77C1366"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 5"; Value = "595-TPS793475DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdo(Typ)(mV)"; Value = "77"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vin(Max)(V)"; Value = "5.5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vin(Min)(V)"; Value = "2.7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vout Adj(Max)(V)"; Value = "4.75"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vout Adj(Min)(V)"; Value = "4.75"; VariantName = "[No Variations]"
+Added Component: Designator=IC2(DIR9001)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet"; Value = "http://www.ti.com/lit/ds/symlink/dir9001.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NAME"; Value = "DIR9001"; VariantName = "[No Variations]"
+Added Component: Designator=IC3(SOT23-5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Accuracy(%)"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MO-178"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ti.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS793475&fileType=pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.ti.com/litv/pdf/mpds018i"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "URL Link1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "Samples URL:http://www.ti.com/product/tps793475#samples"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "SLVS348K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Eco-Plan"; Value = "Green (RoHS & no Sb/Br)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fixed Output Options(V)"; Value = "4.75"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Iout(Max)(A)"; Value = "0.2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Iq(Typ)(mA)"; Value = "0.2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "5-Pin Plastic Small Outline, Body 1.60 × 2.90 mm, Pitch 0.95 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DBV5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "4073253-4/K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "TPS793475DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rating"; Value = "Catalog"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SubFamily"; Value = "Single Channel LDO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 3"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 4"; Value = "Newark"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 5"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-12160-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "296-12160-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 3"; Value = "296-12160-6-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 4"; Value = "77C1366"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 5"; Value = "595-TPS793475DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdo(Typ)(mV)"; Value = "77"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vin(Max)(V)"; Value = "5.5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vin(Min)(V)"; Value = "2.7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vout Adj(Max)(V)"; Value = "4.75"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vout Adj(Min)(V)"; Value = "4.75"; VariantName = "[No Variations]"
+Added Component: Designator=IC4(TSSOP20)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet"; Value = "http://www.ti.com/lit/ds/symlink/pcm5102a.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "PCM5102A"; VariantName = "[No Variations]"
+Added Component: Designator=IN_1(AUDIO-JACK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.580"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "http://www.farnell.com/datasheets/1718833.pdf?_ga=1.139024112.2111588679.1477695937"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "35RAPC4BHN2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Site"; Value = "http://uk.farnell.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=15001&langId=44&urlRequestType=Base&partNumber=1608405&storeId=10151"; VariantName = "[No Variations]"
+Added Component: Designator=IN_2(AUDIO-JACK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.580"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "http://www.farnell.com/datasheets/1718833.pdf?_ga=1.139024112.2111588679.1477695937"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "35RAPC4BHN2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Site"; Value = "http://uk.farnell.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=15001&langId=44&urlRequestType=Base&partNumber=1608405&storeId=10151"; VariantName = "[No Variations]"
+Added Component: Designator=IN_3(AUDIO-JACK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.580"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "http://www.farnell.com/datasheets/1718833.pdf?_ga=1.139024112.2111588679.1477695937"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "35RAPC4BHN2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Site"; Value = "http://uk.farnell.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=15001&langId=44&urlRequestType=Base&partNumber=1608405&storeId=10151"; VariantName = "[No Variations]"
+Added Component: Designator=IN_4(AUDIO-JACK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.580"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "http://www.farnell.com/datasheets/1718833.pdf?_ga=1.139024112.2111588679.1477695937"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "35RAPC4BHN2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Site"; Value = "http://uk.farnell.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=15001&langId=44&urlRequestType=Base&partNumber=1608405&storeId=10151"; VariantName = "[No Variations]"
+Added Component: Designator=IR Rx Pullout1(HDR1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=J1(POWER_JACK_PTH_LOCK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-08197"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_ID"; Value = "PRT-00119"; VariantName = "[No Variations]"
+Added Component: Designator=J2(USB-A-S-NOSILK-FEMALE)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-09520"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_ID"; Value = "PRT-09011"; VariantName = "[No Variations]"
+Added Component: Designator=J3(MOLEX-1X2_LOCK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "SF_ID"; Value = "PRT-09918"; VariantName = "[No Variations]"
+Added Component: Designator=J4(1X06_LOCK)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J5(2X3_LOCK)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JP1(SOLDERJUMPER_CLOSEDWIRE)
+Add component. Clean all parameters for all variants
+Added Component: Designator=L1(1210)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "600R / 100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "BLM18AG601SN1D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "81-BLM11A601S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Ferrite"; VariantName = "[No Variations]"
+Added Component: Designator=L2(1210)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "600R / 100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "BLM18AG601SN1D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "81-BLM11A601S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Ferrite"; VariantName = "[No Variations]"
+Added Component: Designator=OUT_1(AUDIO-JACK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.580"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "http://www.farnell.com/datasheets/1718833.pdf?_ga=1.139024112.2111588679.1477695937"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "35RAPC4BHN2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Site"; Value = "http://uk.farnell.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=15001&langId=44&urlRequestType=Base&partNumber=1608405&storeId=10151"; VariantName = "[No Variations]"
+Added Component: Designator=OUT_2(AUDIO-JACK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Cost"; Value = "0.580"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "http://www.farnell.com/datasheets/1718833.pdf?_ga=1.139024112.2111588679.1477695937"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "35RAPC4BHN2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Site"; Value = "http://uk.farnell.com/webapp/wcs/stores/servlet/ProductDisplay?catalogId=15001&langId=44&urlRequestType=Base&partNumber=1608405&storeId=10151"; VariantName = "[No Variations]"
+Added Component: Designator=P1(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P3(HDR1X4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P4(HDR1X8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P5(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=PC Power Btn1(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Component: Designator=PF1(1206 PF)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "RES-08585"; VariantName = "[No Variations]"
+Added Component: Designator=Power Btn1(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Component: Designator=PSCK1(SOLDERJUMPER)
+Add component. Clean all parameters for all variants
+Added Component: Designator=PSCK2(SOLDERJUMPER)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Q1(SOT23-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "TRANS-11153"; VariantName = "[No Variations]"
+Added Component: Designator=Q2(SOT23-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "TRANS-09116"; VariantName = "[No Variations]"
+Added Component: Designator=Q3(SOT23-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "TRANS-00830"; VariantName = "[No Variations]"
+Added Component: Designator=Q4(SOT23-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "TRANS-00830"; VariantName = "[No Variations]"
+Added Component: Designator=Q5(SOT23-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "TRANS-00830"; VariantName = "[No Variations]"
+Added Component: Designator=Q6(SOT23-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "TRANS-00830"; VariantName = "[No Variations]"
+Added Component: Designator=R1(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R2(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R3(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R4(1206)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R5(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R6(1206)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R7(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R8(1206)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R9(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R10(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R11(1206)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R12(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R13(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R14(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R15(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R16(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R17(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R18(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R19(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R20(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R21(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R22(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R23(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R24(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R25(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R26(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R27(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R28(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R29(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R30(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R31(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R32(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R33(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R34(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R35(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R36(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R37(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R38(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R39(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R40(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "33R / 1% / 0.25 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "667-ERJ-PA3F33R0V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R41(RK27-DUAL-UNIT)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R42(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R43(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R44(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R45(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=RX1(TSOP18XX)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S1(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Component: Designator=S2(SMD Tactile Switch Button Momentary)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S3(SMD Tactile Switch Button Momentary)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S4(SMD Tactile Switch Button Momentary)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S5(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Component: Designator=TOSLINK1(Toslink W/ Screw)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP1(1X01)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP2(1X01)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP3(HDR1X4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=U1(V-REG_DPACK)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "IC-09888"; VariantName = "[No Variations]"
+Added Component: Designator=U2(ESP01)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U3(SOT23-5)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U4(TQFP32-08)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "IC-09069"; VariantName = "[No Variations]"
+Added Component: Designator=U5(HM-11 BREAKOUT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "HM-11"; Value = "HM-11"; VariantName = "[No Variations]"
+Added Component: Designator=U6(SOP8)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U7(OMRON-G3MB-202P-SSR)
+Add component. Clean all parameters for all variants
+Added Component: Designator=USB1(Micro USB B)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Best.Nr (Farnell)"; Value = "1645326"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Cost"; Value = "0.45"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "http://www.farnell.com/datasheets/81390.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part#"; Value = "assortment"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Picked"; Value = "true"; VariantName = "[No Variations]"
+Added Component: Designator=USB POWER BTN1(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3_COMM Pin=IC1-5
+Added Pin To Net: NetName=3V3_COMM Pin=R26-1
+Added Pin To Net: NetName=3V3_COMM Pin=TP3-2
+Added Pin To Net: NetName=3V3_COMM Pin=U2-VCC
+Added Pin To Net: NetName=3V3_COMM Pin=U5-VCC
+Added Net: Name=3V3_COMM
+Added Pin To Net: NetName=3V3_DAC Pin=C12-+
+Added Pin To Net: NetName=3V3_DAC Pin=C13-+
+Added Pin To Net: NetName=3V3_DAC Pin=C15-1
+Added Pin To Net: NetName=3V3_DAC Pin=C16-2
+Added Pin To Net: NetName=3V3_DAC Pin=C24-+
+Added Pin To Net: NetName=3V3_DAC Pin=C25-+
+Added Pin To Net: NetName=3V3_DAC Pin=C26-2
+Added Pin To Net: NetName=3V3_DAC Pin=C27-2
+Added Pin To Net: NetName=3V3_DAC Pin=C32-+
+Added Pin To Net: NetName=3V3_DAC Pin=C33-2
+Added Pin To Net: NetName=3V3_DAC Pin=DEMP1-1
+Added Pin To Net: NetName=3V3_DAC Pin=FILT1-1
+Added Pin To Net: NetName=3V3_DAC Pin=IC2-5
+Added Pin To Net: NetName=3V3_DAC Pin=IC2-24
+Added Pin To Net: NetName=3V3_DAC Pin=IC2-25
+Added Pin To Net: NetName=3V3_DAC Pin=IC2-26
+Added Pin To Net: NetName=3V3_DAC Pin=IC3-5
+Added Pin To Net: NetName=3V3_DAC Pin=IC4-1
+Added Pin To Net: NetName=3V3_DAC Pin=IC4-8
+Added Pin To Net: NetName=3V3_DAC Pin=IC4-17
+Added Pin To Net: NetName=3V3_DAC Pin=IC4-20
+Added Pin To Net: NetName=3V3_DAC Pin=PSCK1-2
+Added Pin To Net: NetName=3V3_DAC Pin=PSCK2-2
+Added Pin To Net: NetName=3V3_DAC Pin=R42-1
+Added Net: Name=3V3_DAC
+Added Pin To Net: NetName=5V Pin=C2-1
+Added Pin To Net: NetName=5V Pin=C5-+
+Added Pin To Net: NetName=5V Pin=C11-1
+Added Pin To Net: NetName=5V Pin=D15-C
+Added Pin To Net: NetName=5V Pin=D16-C
+Added Pin To Net: NetName=5V Pin=D17-C
+Added Pin To Net: NetName=5V Pin=D18-C
+Added Pin To Net: NetName=5V Pin=D19-C
+Added Pin To Net: NetName=5V Pin=D20-C
+Added Pin To Net: NetName=5V Pin=F1-1
+Added Pin To Net: NetName=5V Pin=F3-1
+Added Pin To Net: NetName=5V Pin=IR Rx Pullout1-3
+Added Pin To Net: NetName=5V Pin=J4-4
+Added Pin To Net: NetName=5V Pin=J5-2
+Added Pin To Net: NetName=5V Pin=P3-4
+Added Pin To Net: NetName=5V Pin=R3-2
+Added Pin To Net: NetName=5V Pin=R7-2
+Added Pin To Net: NetName=5V Pin=R12-2
+Added Pin To Net: NetName=5V Pin=R27-2
+Added Pin To Net: NetName=5V Pin=R32-2
+Added Pin To Net: NetName=5V Pin=R33-2
+Added Pin To Net: NetName=5V Pin=R34-2
+Added Pin To Net: NetName=5V Pin=R43-2
+Added Pin To Net: NetName=5V Pin=TP3-3
+Added Pin To Net: NetName=5V Pin=U1-4
+Added Pin To Net: NetName=5V Pin=U4-4
+Added Pin To Net: NetName=5V Pin=U4-6
+Added Pin To Net: NetName=5V Pin=U4-18
+Added Net: Name=5V
+Added Pin To Net: NetName=A6 Pin=P4-2
+Added Pin To Net: NetName=A6 Pin=U4-19
+Added Net: Name=A6
+Added Pin To Net: NetName=A7 Pin=P4-1
+Added Pin To Net: NetName=A7 Pin=U4-22
+Added Net: Name=A7
+Added Pin To Net: NetName=AGND Pin=AUDIO_OUT1-2
+Added Pin To Net: NetName=AGND Pin=C12--
+Added Pin To Net: NetName=AGND Pin=C15-2
+Added Pin To Net: NetName=AGND Pin=C17-1
+Added Pin To Net: NetName=AGND Pin=C18-1
+Added Pin To Net: NetName=AGND Pin=C32--
+Added Pin To Net: NetName=AGND Pin=C33-1
+Added Pin To Net: NetName=AGND Pin=C34-1
+Added Pin To Net: NetName=AGND Pin=C35-1
+Added Pin To Net: NetName=AGND Pin=C43-1
+Added Pin To Net: NetName=AGND Pin=IC2-23
+Added Pin To Net: NetName=AGND Pin=IC4-9
+Added Pin To Net: NetName=AGND Pin=IN_1-RSH
+Added Pin To Net: NetName=AGND Pin=IN_1-SLEEVE
+Added Pin To Net: NetName=AGND Pin=IN_1-TSH
+Added Pin To Net: NetName=AGND Pin=IN_2-RSH
+Added Pin To Net: NetName=AGND Pin=IN_2-SLEEVE
+Added Pin To Net: NetName=AGND Pin=IN_2-TSH
+Added Pin To Net: NetName=AGND Pin=IN_3-RSH
+Added Pin To Net: NetName=AGND Pin=IN_3-SLEEVE
+Added Pin To Net: NetName=AGND Pin=IN_3-TSH
+Added Pin To Net: NetName=AGND Pin=IN_4-RSH
+Added Pin To Net: NetName=AGND Pin=IN_4-SLEEVE
+Added Pin To Net: NetName=AGND Pin=IN_4-TSH
+Added Pin To Net: NetName=AGND Pin=JP1-1
+Added Pin To Net: NetName=AGND Pin=OUT_1-RSH
+Added Pin To Net: NetName=AGND Pin=OUT_1-SLEEVE
+Added Pin To Net: NetName=AGND Pin=OUT_1-TSH
+Added Pin To Net: NetName=AGND Pin=OUT_2-RSH
+Added Pin To Net: NetName=AGND Pin=OUT_2-SLEEVE
+Added Pin To Net: NetName=AGND Pin=OUT_2-TSH
+Added Pin To Net: NetName=AGND Pin=R44-1
+Added Pin To Net: NetName=AGND Pin=R45-1
+Added Net: Name=AGND
+Added Pin To Net: NetName=AREF Pin=C41-1
+Added Pin To Net: NetName=AREF Pin=P4-4
+Added Pin To Net: NetName=AREF Pin=U4-20
+Added Net: Name=AREF
+Added Pin To Net: NetName=BCK Pin=Digital In1-1
+Added Pin To Net: NetName=BCK Pin=IC4-13
+Added Pin To Net: NetName=BCK Pin=R8-2
+Added Net: Name=BCK
+Added Pin To Net: NetName=BIAS_D+_1 Pin=P3-2
+Added Pin To Net: NetName=BIAS_D+_1 Pin=R39-2
+Added Net: Name=BIAS_D+_1
+Added Pin To Net: NetName=BIAS_D+_2 Pin=J2-D+
+Added Pin To Net: NetName=BIAS_D+_2 Pin=R39-1
+Added Net: Name=BIAS_D+_2
+Added Pin To Net: NetName=BIAS_D-_1 Pin=P3-3
+Added Pin To Net: NetName=BIAS_D-_1 Pin=R38-2
+Added Net: Name=BIAS_D-_1
+Added Pin To Net: NetName=BIAS_D-_2 Pin=J2-D-
+Added Pin To Net: NetName=BIAS_D-_2 Pin=R38-1
+Added Net: Name=BIAS_D-_2
+Added Pin To Net: NetName=Boost_Vcc Pin=U6-6
+Added Net: Name=Boost_Vcc
+Added Net: Name=BT_RX
+Added Net: Name=BT_TX
+Added Pin To Net: NetName=CH_PD Pin=R26-2
+Added Pin To Net: NetName=CH_PD Pin=R37-1
+Added Pin To Net: NetName=CH_PD Pin=U2-CH_PD
+Added Net: Name=CH_PD
+Added Pin To Net: NetName=COM_SEL_LEDS Pin=D11-A
+Added Pin To Net: NetName=COM_SEL_LEDS Pin=D12-A
+Added Pin To Net: NetName=COM_SEL_LEDS Pin=D13-A
+Added Pin To Net: NetName=COM_SEL_LEDS Pin=R43-1
+Added Net: Name=COM_SEL_LEDS
+Added Pin To Net: NetName=CTS Pin=J4-5
+Added Net: Name=CTS
+Added Pin To Net: NetName=DGND Pin=C1-2
+Added Pin To Net: NetName=DGND Pin=C2-2
+Added Pin To Net: NetName=DGND Pin=C3-2
+Added Pin To Net: NetName=DGND Pin=C4-1
+Added Pin To Net: NetName=DGND Pin=C5--
+Added Pin To Net: NetName=DGND Pin=C8-2
+Added Pin To Net: NetName=DGND Pin=C10-2
+Added Pin To Net: NetName=DGND Pin=C11-2
+Added Pin To Net: NetName=DGND Pin=C13--
+Added Pin To Net: NetName=DGND Pin=C14-2
+Added Pin To Net: NetName=DGND Pin=C16-1
+Added Pin To Net: NetName=DGND Pin=C19-2
+Added Pin To Net: NetName=DGND Pin=C20-1
+Added Pin To Net: NetName=DGND Pin=C21-1
+Added Pin To Net: NetName=DGND Pin=C22-2
+Added Pin To Net: NetName=DGND Pin=C23-1
+Added Pin To Net: NetName=DGND Pin=C25--
+Added Pin To Net: NetName=DGND Pin=C27-1
+Added Pin To Net: NetName=DGND Pin=C30-1
+Added Pin To Net: NetName=DGND Pin=C36-1
+Added Pin To Net: NetName=DGND Pin=C38-2
+Added Pin To Net: NetName=DGND Pin=C39--
+Added Pin To Net: NetName=DGND Pin=C41-2
+Added Pin To Net: NetName=DGND Pin=C42--
+Added Pin To Net: NetName=DGND Pin=D1-C
+Added Pin To Net: NetName=DGND Pin=D2-C
+Added Pin To Net: NetName=DGND Pin=D4-K
+Added Pin To Net: NetName=DGND Pin=D6-K
+Added Pin To Net: NetName=DGND Pin=D10-K
+Added Pin To Net: NetName=DGND Pin=D14-K
+Added Pin To Net: NetName=DGND Pin=D21-A
+Added Pin To Net: NetName=DGND Pin=D22-A
+Added Pin To Net: NetName=DGND Pin=D23-A
+Added Pin To Net: NetName=DGND Pin=D24-A
+Added Pin To Net: NetName=DGND Pin=D25-A
+Added Pin To Net: NetName=DGND Pin=D26-A
+Added Pin To Net: NetName=DGND Pin=DEMP1-3
+Added Pin To Net: NetName=DGND Pin=FILT1-3
+Added Pin To Net: NetName=DGND Pin=IC1-2
+Added Pin To Net: NetName=DGND Pin=IC2-6
+Added Pin To Net: NetName=DGND Pin=IC2-19
+Added Pin To Net: NetName=DGND Pin=IC3-2
+Added Pin To Net: NetName=DGND Pin=IC4-3
+Added Pin To Net: NetName=DGND Pin=IC4-12
+Added Pin To Net: NetName=DGND Pin=IC4-16
+Added Pin To Net: NetName=DGND Pin=IR Rx Pullout1-1
+Added Pin To Net: NetName=DGND Pin=J1-GND
+Added Pin To Net: NetName=DGND Pin=J1-GNDBREAK
+Added Pin To Net: NetName=DGND Pin=J4-6
+Added Pin To Net: NetName=DGND Pin=J5-6
+Added Pin To Net: NetName=DGND Pin=JP1-2
+Added Pin To Net: NetName=DGND Pin=P3-1
+Added Pin To Net: NetName=DGND Pin=Power Btn1-1
+Added Pin To Net: NetName=DGND Pin=Q2-2
+Added Pin To Net: NetName=DGND Pin=Q3-2
+Added Pin To Net: NetName=DGND Pin=Q4-2
+Added Pin To Net: NetName=DGND Pin=Q5-2
+Added Pin To Net: NetName=DGND Pin=Q5-3
+Added Pin To Net: NetName=DGND Pin=Q6-2
+Added Pin To Net: NetName=DGND Pin=R17-2
+Added Pin To Net: NetName=DGND Pin=R19-2
+Added Pin To Net: NetName=DGND Pin=R22-2
+Added Pin To Net: NetName=DGND Pin=R31-2
+Added Pin To Net: NetName=DGND Pin=RX1-GND
+Added Pin To Net: NetName=DGND Pin=S1-1
+Added Pin To Net: NetName=DGND Pin=S2-1
+Added Pin To Net: NetName=DGND Pin=S3-3
+Added Pin To Net: NetName=DGND Pin=S4-1
+Added Pin To Net: NetName=DGND Pin=TOSLINK1-2
+Added Pin To Net: NetName=DGND Pin=TP3-1
+Added Pin To Net: NetName=DGND Pin=U1-1
+Added Pin To Net: NetName=DGND Pin=U2-GND
+Added Pin To Net: NetName=DGND Pin=U3-2
+Added Pin To Net: NetName=DGND Pin=U4-3
+Added Pin To Net: NetName=DGND Pin=U4-5
+Added Pin To Net: NetName=DGND Pin=U4-21
+Added Pin To Net: NetName=DGND Pin=U5-GND
+Added Pin To Net: NetName=DGND Pin=U6-8
+Added Pin To Net: NetName=DGND Pin=U7-4
+Added Pin To Net: NetName=DGND Pin=USB POWER BTN1-1
+Added Net: Name=DGND
+Added Pin To Net: NetName=DTR Pin=C40-1
+Added Pin To Net: NetName=DTR Pin=J4-1
+Added Pin To Net: NetName=DTR Pin=S4-3
+Added Net: Name=DTR
+Added Pin To Net: NetName=EN_POW Pin=D7-C
+Added Pin To Net: NetName=EN_POW Pin=IC3-3
+Added Pin To Net: NetName=EN_POW Pin=U4-7
+Added Net: Name=EN_POW
+Added Pin To Net: NetName=GPIO_2_WIFI Pin=P2-1
+Added Pin To Net: NetName=GPIO_2_WIFI Pin=U2-GPIO2
+Added Net: Name=GPIO_2_WIFI
+Added Pin To Net: NetName=HIGH_PWR_SW Pin=R40-2
+Added Pin To Net: NetName=HIGH_PWR_SW Pin=U4-25
+Added Net: Name=HIGH_PWR_SW
+Added Pin To Net: NetName=I1L Pin=IN_1-TIP
+Added Net: Name=I1L
+Added Pin To Net: NetName=I1R Pin=IN_1-RING
+Added Net: Name=I1R
+Added Pin To Net: NetName=I2L Pin=IN_3-TIP
+Added Net: Name=I2L
+Added Pin To Net: NetName=I2R Pin=IN_3-RING
+Added Net: Name=I2R
+Added Pin To Net: NetName=I2S_DOUT Pin=Digital In1-2
+Added Pin To Net: NetName=I2S_DOUT Pin=IC4-14
+Added Pin To Net: NetName=I2S_DOUT Pin=R11-2
+Added Net: Name=I2S_DOUT
+Added Pin To Net: NetName=I3L Pin=IN_2-TIP
+Added Net: Name=I3L
+Added Pin To Net: NetName=I3R Pin=IN_2-RING
+Added Net: Name=I3R
+Added Pin To Net: NetName=I4L Pin=AUDIO_OUT1-1
+Added Pin To Net: NetName=I4L Pin=C35-2
+Added Pin To Net: NetName=I4L Pin=IN_4-TIP
+Added Pin To Net: NetName=I4L Pin=R24-2
+Added Net: Name=I4L
+Added Pin To Net: NetName=I4R Pin=AUDIO_OUT1-3
+Added Pin To Net: NetName=I4R Pin=C34-2
+Added Pin To Net: NetName=I4R Pin=IN_4-RING
+Added Pin To Net: NetName=I4R Pin=R25-2
+Added Net: Name=I4R
+Added Pin To Net: NetName=IN_GND Pin=C43-2
+Added Pin To Net: NetName=IN_GND Pin=R41-A_1
+Added Pin To Net: NetName=IN_GND Pin=R41-A_2
+Added Net: Name=IN_GND
+Added Pin To Net: NetName=IN_L Pin=R41-B_1
+Added Pin To Net: NetName=IN_L Pin=R44-2
+Added Net: Name=IN_L
+Added Pin To Net: NetName=IN_R Pin=R41-B_2
+Added Pin To Net: NetName=IN_R Pin=R45-2
+Added Net: Name=IN_R
+Added Pin To Net: NetName=IR_IN Pin=IR Rx Pullout1-2
+Added Pin To Net: NetName=IR_IN Pin=J5-1
+Added Pin To Net: NetName=IR_IN Pin=RX1-OUT
+Added Pin To Net: NetName=IR_IN Pin=U4-16
+Added Net: Name=IR_IN
+Added Pin To Net: NetName=IR_LEARN Pin=C36-2
+Added Pin To Net: NetName=IR_LEARN Pin=R27-1
+Added Pin To Net: NetName=IR_LEARN Pin=U4-24
+Added Net: Name=IR_LEARN
+Added Pin To Net: NetName=LIVE_1 Pin=J3-1
+Added Pin To Net: NetName=LIVE_1 Pin=U7-1
+Added Net: Name=LIVE_1
+Added Pin To Net: NetName=LIVE_2 Pin=J3-2
+Added Pin To Net: NetName=LIVE_2 Pin=U7-2
+Added Net: Name=LIVE_2
+Added Pin To Net: NetName=LRCK Pin=Digital In1-3
+Added Pin To Net: NetName=LRCK Pin=IC4-15
+Added Pin To Net: NetName=LRCK Pin=R6-2
+Added Net: Name=LRCK
+Added Pin To Net: NetName=MCU_RESET Pin=C40-2
+Added Pin To Net: NetName=MCU_RESET Pin=R34-1
+Added Pin To Net: NetName=MCU_RESET Pin=U4-29
+Added Net: Name=MCU_RESET
+Added Pin To Net: NetName=MCU_Rx Pin=J4-2
+Added Pin To Net: NetName=MCU_Rx Pin=U4-30
+Added Net: Name=MCU_Rx
+Added Pin To Net: NetName=MCU_Tx Pin=J4-3
+Added Pin To Net: NetName=MCU_Tx Pin=U4-31
+Added Net: Name=MCU_Tx
+Added Pin To Net: NetName=MOSI Pin=D8-A
+Added Pin To Net: NetName=MOSI Pin=J5-4
+Added Pin To Net: NetName=MOSI Pin=U4-15
+Added Pin To Net: NetName=MOSI Pin=U6-5
+Added Net: Name=MOSI
+Added Pin To Net: NetName=MOTOR_FORWARD Pin=D5-A
+Added Pin To Net: NetName=MOTOR_FORWARD Pin=U4-1
+Added Pin To Net: NetName=MOTOR_FORWARD Pin=U6-4
+Added Net: Name=MOTOR_FORWARD
+Added Pin To Net: NetName=MOTOR_OUT_1 Pin=R41-M_1
+Added Pin To Net: NetName=MOTOR_OUT_1 Pin=R41-M_1
+Added Pin To Net: NetName=MOTOR_OUT_1 Pin=U6-1
+Added Net: Name=MOTOR_OUT_1
+Added Pin To Net: NetName=MOTOR_OUT_2 Pin=R41-M_2
+Added Pin To Net: NetName=MOTOR_OUT_2 Pin=R41-M_2
+Added Pin To Net: NetName=MOTOR_OUT_2 Pin=U6-7
+Added Net: Name=MOTOR_OUT_2
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=F1-2
+Added Pin To Net: NetName=NetC1_1 Pin=IC1-1
+Added Pin To Net: NetName=NetC1_1 Pin=IC1-3
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=IC1-4
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=R3-1
+Added Pin To Net: NetName=NetC4_2 Pin=RX1-VCC
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetC9_1 Pin=C9-1
+Added Pin To Net: NetName=NetC9_1 Pin=F2-2
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetC10_1 Pin=C10-1
+Added Pin To Net: NetName=NetC10_1 Pin=F3-2
+Added Pin To Net: NetName=NetC10_1 Pin=IC3-1
+Added Net: Name=NetC10_1
+Added Pin To Net: NetName=NetC14_1 Pin=C14-1
+Added Pin To Net: NetName=NetC14_1 Pin=IC3-4
+Added Net: Name=NetC14_1
+Added Pin To Net: NetName=NetC17_2 Pin=C17-2
+Added Pin To Net: NetName=NetC17_2 Pin=R5-1
+Added Net: Name=NetC17_2
+Added Pin To Net: NetName=NetC18_2 Pin=C18-2
+Added Pin To Net: NetName=NetC18_2 Pin=IC2-22
+Added Pin To Net: NetName=NetC18_2 Pin=R5-2
+Added Net: Name=NetC18_2
+Added Pin To Net: NetName=NetC19_1 Pin=C19-1
+Added Pin To Net: NetName=NetC19_1 Pin=IC2-8
+Added Net: Name=NetC19_1
+Added Pin To Net: NetName=NetC20_2 Pin=C20-2
+Added Pin To Net: NetName=NetC20_2 Pin=L1-1
+Added Pin To Net: NetName=NetC20_2 Pin=TOSLINK1-1
+Added Net: Name=NetC20_2
+Added Pin To Net: NetName=NetC24_- Pin=C24--
+Added Pin To Net: NetName=NetC24_- Pin=C26-1
+Added Pin To Net: NetName=NetC24_- Pin=C28-2
+Added Pin To Net: NetName=NetC24_- Pin=C31--
+Added Pin To Net: NetName=NetC24_- Pin=IC4-19
+Added Net: Name=NetC24_-
+Added Pin To Net: NetName=NetC28_1 Pin=C28-1
+Added Pin To Net: NetName=NetC28_1 Pin=C31-+
+Added Pin To Net: NetName=NetC28_1 Pin=IC4-18
+Added Net: Name=NetC28_1
+Added Pin To Net: NetName=NetC29_1 Pin=C29-1
+Added Pin To Net: NetName=NetC29_1 Pin=IC4-2
+Added Net: Name=NetC29_1
+Added Pin To Net: NetName=NetC29_2 Pin=C29-2
+Added Pin To Net: NetName=NetC29_2 Pin=IC4-4
+Added Net: Name=NetC29_2
+Added Pin To Net: NetName=NetC30_2 Pin=C30-2
+Added Pin To Net: NetName=NetC30_2 Pin=IC4-5
+Added Net: Name=NetC30_2
+Added Pin To Net: NetName=NetC37_1 Pin=C37-1
+Added Pin To Net: NetName=NetC37_1 Pin=R29-2
+Added Pin To Net: NetName=NetC37_1 Pin=R31-1
+Added Pin To Net: NetName=NetC37_1 Pin=U3-3
+Added Net: Name=NetC37_1
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=R1-2
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD2_A Pin=D2-A
+Added Pin To Net: NetName=NetD2_A Pin=R2-2
+Added Net: Name=NetD2_A
+Added Pin To Net: NetName=NetD3_A Pin=D3-A
+Added Pin To Net: NetName=NetD3_A Pin=J1-PWR
+Added Net: Name=NetD3_A
+Added Pin To Net: NetName=NetD4_A Pin=D4-A
+Added Pin To Net: NetName=NetD4_A Pin=R9-2
+Added Net: Name=NetD4_A
+Added Pin To Net: NetName=NetD5_C Pin=D5-C
+Added Pin To Net: NetName=NetD5_C Pin=D8-C
+Added Pin To Net: NetName=NetD5_C Pin=R16-2
+Added Pin To Net: NetName=NetD5_C Pin=R17-1
+Added Net: Name=NetD5_C
+Added Pin To Net: NetName=NetD6_A Pin=D6-A
+Added Pin To Net: NetName=NetD6_A Pin=R14-2
+Added Net: Name=NetD6_A
+Added Pin To Net: NetName=NetD9_A Pin=D9-A
+Added Pin To Net: NetName=NetD9_A Pin=L2-2
+Added Pin To Net: NetName=NetD9_A Pin=U3-1
+Added Net: Name=NetD9_A
+Added Pin To Net: NetName=NetD10_A Pin=D10-A
+Added Pin To Net: NetName=NetD10_A Pin=R35-1
+Added Net: Name=NetD10_A
+Added Pin To Net: NetName=NetD14_A Pin=D14-A
+Added Pin To Net: NetName=NetD14_A Pin=R42-2
+Added Net: Name=NetD14_A
+Added Pin To Net: NetName=NetDEMP1_2 Pin=DEMP1-2
+Added Pin To Net: NetName=NetDEMP1_2 Pin=IC4-10
+Added Net: Name=NetDEMP1_2
+Added Pin To Net: NetName=NetFILT1_2 Pin=FILT1-2
+Added Pin To Net: NetName=NetFILT1_2 Pin=IC4-11
+Added Net: Name=NetFILT1_2
+Added Pin To Net: NetName=NetIC2_1 Pin=IC2-1
+Added Pin To Net: NetName=NetIC2_1 Pin=R2-1
+Added Net: Name=NetIC2_1
+Added Pin To Net: NetName=NetIC2_4 Pin=IC2-4
+Added Pin To Net: NetName=NetIC2_4 Pin=R4-1
+Added Net: Name=NetIC2_4
+Added Pin To Net: NetName=NetIC2_10 Pin=IC2-10
+Added Pin To Net: NetName=NetIC2_10 Pin=R6-1
+Added Net: Name=NetIC2_10
+Added Pin To Net: NetName=NetIC2_11 Pin=IC2-11
+Added Pin To Net: NetName=NetIC2_11 Pin=R8-1
+Added Net: Name=NetIC2_11
+Added Pin To Net: NetName=NetIC2_12 Pin=IC2-12
+Added Pin To Net: NetName=NetIC2_12 Pin=R11-1
+Added Net: Name=NetIC2_12
+Added Pin To Net: NetName=NetIC2_13 Pin=IC2-13
+Added Pin To Net: NetName=NetIC2_13 Pin=PSCK2-1
+Added Net: Name=NetIC2_13
+Added Pin To Net: NetName=NetIC2_14 Pin=IC2-14
+Added Pin To Net: NetName=NetIC2_14 Pin=PSCK1-1
+Added Net: Name=NetIC2_14
+Added Pin To Net: NetName=NetIC2_27 Pin=IC2-27
+Added Pin To Net: NetName=NetIC2_27 Pin=R1-1
+Added Net: Name=NetIC2_27
+Added Pin To Net: NetName=NetIC4_6 Pin=IC4-6
+Added Pin To Net: NetName=NetIC4_6 Pin=R24-1
+Added Net: Name=NetIC4_6
+Added Pin To Net: NetName=NetIC4_7 Pin=IC4-7
+Added Pin To Net: NetName=NetIC4_7 Pin=R25-1
+Added Net: Name=NetIC4_7
+Added Pin To Net: NetName=NetL1_2 Pin=L1-2
+Added Pin To Net: NetName=NetL1_2 Pin=TP1-1
+Added Net: Name=NetL1_2
+Added Pin To Net: NetName=NetPF1_1 Pin=PF1-1
+Added Pin To Net: NetName=NetPF1_1 Pin=U1-3
+Added Net: Name=NetPF1_1
+Added Pin To Net: NetName=NetPower Btn1_2 Pin=Power Btn1-2
+Added Pin To Net: NetName=NetPower Btn1_2 Pin=R10-2
+Added Net: Name=NetPower Btn1_2
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q2-3
+Added Pin To Net: NetName=NetQ1_1 Pin=R13-1
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_1 Pin=R16-1
+Added Net: Name=NetQ2_1
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_1 Pin=R18-1
+Added Net: Name=NetQ3_1
+Added Pin To Net: NetName=NetQ4_1 Pin=Q4-1
+Added Pin To Net: NetName=NetQ4_1 Pin=R20-1
+Added Net: Name=NetQ4_1
+Added Pin To Net: NetName=NetQ5_1 Pin=Q5-1
+Added Pin To Net: NetName=NetQ5_1 Pin=R21-1
+Added Net: Name=NetQ5_1
+Added Pin To Net: NetName=NetQ6_1 Pin=Q6-1
+Added Pin To Net: NetName=NetQ6_1 Pin=R23-1
+Added Net: Name=NetQ6_1
+Added Pin To Net: NetName=NetR15_2 Pin=R15-2
+Added Pin To Net: NetName=NetR15_2 Pin=S1-2
+Added Net: Name=NetR15_2
+Added Pin To Net: NetName=NetR28_2 Pin=R28-2
+Added Pin To Net: NetName=NetR28_2 Pin=U3-4
+Added Net: Name=NetR28_2
+Added Pin To Net: NetName=NetR35_2 Pin=R35-2
+Added Pin To Net: NetName=NetR35_2 Pin=U5-LED
+Added Net: Name=NetR35_2
+Added Pin To Net: NetName=NetR40_1 Pin=R40-1
+Added Pin To Net: NetName=NetR40_1 Pin=U7-3
+Added Net: Name=NetR40_1
+Added Pin To Net: NetName=NetS3_1 Pin=S3-1
+Added Pin To Net: NetName=NetS3_1 Pin=U2-GPIO0
+Added Net: Name=NetS3_1
+Added Pin To Net: NetName=O1L Pin=OUT_1-TIP
+Added Net: Name=O1L
+Added Pin To Net: NetName=O1R Pin=OUT_1-RING
+Added Net: Name=O1R
+Added Pin To Net: NetName=O2L Pin=OUT_2-TIP
+Added Net: Name=O2L
+Added Pin To Net: NetName=O2R Pin=OUT_2-RING
+Added Net: Name=O2R
+Added Pin To Net: NetName=OUT_L Pin=R41-W_1
+Added Net: Name=OUT_L
+Added Pin To Net: NetName=OUT_R Pin=R41-W_2
+Added Net: Name=OUT_R
+Added Pin To Net: NetName=OUTPUT_SEL Pin=D16-A
+Added Pin To Net: NetName=OUTPUT_SEL Pin=D22-C
+Added Pin To Net: NetName=OUTPUT_SEL Pin=U4-32
+Added Net: Name=OUTPUT_SEL
+Added Pin To Net: NetName=PC PWR SW 1 Pin=P1-2
+Added Pin To Net: NetName=PC PWR SW 1 Pin=PC Power Btn1-1
+Added Pin To Net: NetName=PC PWR SW 1 Pin=Q6-3
+Added Net: Name=PC PWR SW 1
+Added Pin To Net: NetName=PC PWR SW 2 Pin=P1-1
+Added Pin To Net: NetName=PC PWR SW 2 Pin=PC Power Btn1-2
+Added Pin To Net: NetName=PC PWR SW 2 Pin=Q4-3
+Added Net: Name=PC PWR SW 2
+Added Pin To Net: NetName=PC SWITCH Pin=R20-2
+Added Pin To Net: NetName=PC SWITCH Pin=R22-1
+Added Pin To Net: NetName=PC SWITCH Pin=R23-2
+Added Pin To Net: NetName=PC SWITCH Pin=R36-1
+Added Net: Name=PC SWITCH
+Added Pin To Net: NetName=PWM_OUT Pin=P4-3
+Added Pin To Net: NetName=PWM_OUT Pin=U4-14
+Added Net: Name=PWM_OUT
+Added Pin To Net: NetName=PWR_BTN Pin=C21-2
+Added Pin To Net: NetName=PWR_BTN Pin=R7-1
+Added Pin To Net: NetName=PWR_BTN Pin=R10-1
+Added Pin To Net: NetName=PWR_BTN Pin=U4-23
+Added Net: Name=PWR_BTN
+Added Pin To Net: NetName=PWR_LED Pin=R9-1
+Added Pin To Net: NetName=PWR_LED Pin=U4-12
+Added Net: Name=PWR_LED
+Added Pin To Net: NetName=RESET_SPDIF Pin=C22-1
+Added Pin To Net: NetName=RESET_SPDIF Pin=D7-A
+Added Pin To Net: NetName=RESET_SPDIF Pin=IC2-21
+Added Pin To Net: NetName=RESET_SPDIF Pin=TP2-1
+Added Net: Name=RESET_SPDIF
+Added Pin To Net: NetName=RESET Pin=J5-5
+Added Net: Name=RESET
+Added Pin To Net: NetName=RST_WIFI Pin=P2-2
+Added Pin To Net: NetName=RST_WIFI Pin=U2-RST
+Added Net: Name=RST_WIFI
+Added Pin To Net: NetName=SCK Pin=D17-A
+Added Pin To Net: NetName=SCK Pin=D23-C
+Added Pin To Net: NetName=SCK Pin=J5-3
+Added Pin To Net: NetName=SCK Pin=R4-2
+Added Pin To Net: NetName=SCK Pin=U4-17
+Added Net: Name=SCK
+Added Pin To Net: NetName=SCL Pin=P5-2
+Added Pin To Net: NetName=SCL Pin=R32-1
+Added Pin To Net: NetName=SCL Pin=R37-2
+Added Pin To Net: NetName=SCL Pin=U4-28
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=P5-1
+Added Pin To Net: NetName=SDA Pin=R33-1
+Added Pin To Net: NetName=SDA Pin=R36-2
+Added Pin To Net: NetName=SDA Pin=U4-27
+Added Net: Name=SDA
+Added Pin To Net: NetName=SEL_1 Pin=D12-K
+Added Pin To Net: NetName=SEL_1 Pin=D19-A
+Added Pin To Net: NetName=SEL_1 Pin=D25-C
+Added Pin To Net: NetName=SEL_1 Pin=U4-2
+Added Net: Name=SEL_1
+Added Pin To Net: NetName=SEL_2 Pin=D13-K
+Added Pin To Net: NetName=SEL_2 Pin=D20-A
+Added Pin To Net: NetName=SEL_2 Pin=D26-C
+Added Pin To Net: NetName=SEL_2 Pin=U4-9
+Added Net: Name=SEL_2
+Added Pin To Net: NetName=SEL_3 Pin=D11-K
+Added Pin To Net: NetName=SEL_3 Pin=D15-A
+Added Pin To Net: NetName=SEL_3 Pin=D21-C
+Added Pin To Net: NetName=SEL_3 Pin=U4-10
+Added Net: Name=SEL_3
+Added Pin To Net: NetName=SEL_BTN Pin=C23-2
+Added Pin To Net: NetName=SEL_BTN Pin=R12-1
+Added Pin To Net: NetName=SEL_BTN Pin=R15-1
+Added Pin To Net: NetName=SEL_BTN Pin=U4-11
+Added Net: Name=SEL_BTN
+Added Pin To Net: NetName=SEL_COM Pin=D18-A
+Added Pin To Net: NetName=SEL_COM Pin=D24-C
+Added Pin To Net: NetName=SEL_COM Pin=U4-13
+Added Net: Name=SEL_COM
+Added Pin To Net: NetName=SLEEP_LED Pin=R14-1
+Added Pin To Net: NetName=SLEEP_LED Pin=U4-26
+Added Net: Name=SLEEP_LED
+Added Pin To Net: NetName=TO_BOOSTER Pin=C38-1
+Added Pin To Net: NetName=TO_BOOSTER Pin=L2-1
+Added Pin To Net: NetName=TO_BOOSTER Pin=Q1-3
+Added Pin To Net: NetName=TO_BOOSTER Pin=R28-1
+Added Pin To Net: NetName=TO_BOOSTER Pin=U3-5
+Added Net: Name=TO_BOOSTER
+Added Pin To Net: NetName=TOSLINK Pin=IC2-20
+Added Pin To Net: NetName=TOSLINK Pin=TOSLINK1-3
+Added Net: Name=TOSLINK
+Added Net: Name=USB_D+
+Added Net: Name=USB_D-
+Added Pin To Net: NetName=USB_SWITCH_1 Pin=J2-GND
+Added Pin To Net: NetName=USB_SWITCH_1 Pin=Q3-3
+Added Pin To Net: NetName=USB_SWITCH_1 Pin=USB POWER BTN1-2
+Added Net: Name=USB_SWITCH_1
+Added Pin To Net: NetName=USB SW Pin=R18-2
+Added Pin To Net: NetName=USB SW Pin=R19-1
+Added Pin To Net: NetName=USB SW Pin=R21-2
+Added Pin To Net: NetName=USB SW Pin=U4-8
+Added Net: Name=USB SW
+Added Pin To Net: NetName=V_In Pin=C6-+
+Added Pin To Net: NetName=V_In Pin=C6--
+Added Pin To Net: NetName=V_In Pin=C7--
+Added Pin To Net: NetName=V_In Pin=C8-1
+Added Pin To Net: NetName=V_In Pin=C9-2
+Added Pin To Net: NetName=V_In Pin=D3-C
+Added Pin To Net: NetName=V_In Pin=F2-1
+Added Pin To Net: NetName=V_In Pin=J2-VBUS
+Added Pin To Net: NetName=V_In Pin=PF1-2
+Added Pin To Net: NetName=V_In Pin=Q1-2
+Added Pin To Net: NetName=V_In Pin=R13-2
+Added Pin To Net: NetName=V_In Pin=TP3-4
+Added Pin To Net: NetName=V_In Pin=USB1-1
+Added Pin To Net: NetName=V_In Pin=USB1-1
+Added Net: Name=V_In
+Added Pin To Net: NetName=Wifi_RX Pin=U2-RX
+Added Net: Name=Wifi_RX
+Added Pin To Net: NetName=Wifi_TX Pin=U2-TX
+Added Net: Name=Wifi_TX
+Added Pin To Net: NetName=~9V Pin=C37-2
+Added Pin To Net: NetName=~9V Pin=C39-+
+Added Pin To Net: NetName=~9V Pin=C42-+
+Added Pin To Net: NetName=~9V Pin=D9-C
+Added Pin To Net: NetName=~9V Pin=R29-1
+Added Pin To Net: NetName=~9V Pin=U6-2
+Added Pin To Net: NetName=~9V Pin=U6-3
+Added Net: Name=~9V
+Added Class: Name=Final_Audio_Selector_board
+Added Room: Name=Final_Audio_Selector_board

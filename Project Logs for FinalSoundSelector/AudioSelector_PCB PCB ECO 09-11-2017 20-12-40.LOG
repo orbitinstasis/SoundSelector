@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=MCU RESET1 Old Footprint=TACTILE_SWITCH_SMD_5.2MM New Footprint=SMD Tactile Switch Button Momentary
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

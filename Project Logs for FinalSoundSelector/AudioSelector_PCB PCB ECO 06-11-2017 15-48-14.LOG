@@ -1,0 +1,74 @@
+Removed Member From Class: ClassName=Final_Audio_Selector_board Member=R60
+Change Component Designator: OldDesignator=C6 NewDesignator=C7
+Change Component Designator: OldDesignator=C7 NewDesignator=C8
+Change Component Designator: OldDesignator=C8 NewDesignator=C6
+Change Component Designator: OldDesignator=D9 NewDesignator=D10
+Change Component Designator: OldDesignator=D10 NewDesignator=D11
+Change Component Designator: OldDesignator=D11 NewDesignator=D13
+Change Component Designator: OldDesignator=D12 NewDesignator=D14
+Change Component Designator: OldDesignator=D13 NewDesignator=D15
+Change Component Designator: OldDesignator=D14 NewDesignator=D16
+Change Component Designator: OldDesignator=D15 NewDesignator=D17
+Change Component Designator: OldDesignator=D16 NewDesignator=D18
+Change Component Designator: OldDesignator=D17 NewDesignator=D19
+Change Component Designator: OldDesignator=D18 NewDesignator=D20
+Change Component Designator: OldDesignator=D19 NewDesignator=D21
+Change Component Designator: OldDesignator=D20 NewDesignator=D12
+Change Component Designator: OldDesignator=D20 NewDesignator=D22
+Change Component Designator: OldDesignator=D21 NewDesignator=D9
+Change Component Designator: OldDesignator=D21 NewDesignator=D23
+Change Component Designator: OldDesignator=D22 NewDesignator=D24
+Change Component Designator: OldDesignator=D23 NewDesignator=D25
+Change Component Designator: OldDesignator=D24 NewDesignator=D26
+Change Component Designator: OldDesignator=D25 NewDesignator=D27
+Change Component Designator: OldDesignator=D26 NewDesignator=D28
+Change Component Designator: OldDesignator=FLASH MODE NewDesignator=FLASH MODE1
+Change Component Designator: OldDesignator=IR LEARN NewDesignator=IR LEARN1
+Change Component Designator: OldDesignator=J2-1 NewDesignator=J3
+Change Component Designator: OldDesignator=J3 NewDesignator=J4
+Change Component Designator: OldDesignator=J4 NewDesignator=J5
+Change Component Designator: OldDesignator=J5 NewDesignator=J6
+Change Component Designator: OldDesignator=K1 NewDesignator=K4
+Change Component Designator: OldDesignator=K2 NewDesignator=K5
+Change Component Designator: OldDesignator=K3 NewDesignator=K1
+Change Component Designator: OldDesignator=K4 NewDesignator=K3
+Change Component Designator: OldDesignator=K5 NewDesignator=K2
+Change Component Designator: OldDesignator=MCU RESET NewDesignator=MCU RESET1
+Change Component Designator: OldDesignator=P3 NewDesignator=P4
+Change Component Designator: OldDesignator=P4 NewDesignator=P6
+Change Component Designator: OldDesignator=P10 NewDesignator=P1
+Change Component Designator: OldDesignator=PC PWR BUTTON NewDesignator=PC PWR BUTTON1
+Change Component Designator: OldDesignator=R31 NewDesignator=R30
+Change Component Designator: OldDesignator=R32 NewDesignator=R31
+Change Component Designator: OldDesignator=R33 NewDesignator=R32
+Change Component Designator: OldDesignator=R34 NewDesignator=R33
+Change Component Designator: OldDesignator=R35 NewDesignator=R34
+Change Component Designator: OldDesignator=R36 NewDesignator=R35
+Change Component Designator: OldDesignator=R37 NewDesignator=R36
+Change Component Designator: OldDesignator=R38-1 NewDesignator=R39
+Change Component Designator: OldDesignator=R38 NewDesignator=R37
+Change Component Designator: OldDesignator=R39-1 NewDesignator=R40
+Change Component Designator: OldDesignator=R39 NewDesignator=R38
+Change Component Designator: OldDesignator=R40 NewDesignator=R41
+Change Component Designator: OldDesignator=R41 NewDesignator=R42
+Change Component Designator: OldDesignator=R42 NewDesignator=R44
+Change Component Designator: OldDesignator=R43 NewDesignator=R45
+Change Component Designator: OldDesignator=R44 NewDesignator=R46
+Change Component Designator: OldDesignator=R45 NewDesignator=R47
+Change Component Designator: OldDesignator=R60 NewDesignator=R43
+Change Component Designator: OldDesignator=S5 NewDesignator=S2
+Change Component Designator: OldDesignator=TP3 NewDesignator=TP2
+Change Component Designator: OldDesignator=USB PWN BTN NewDesignator=USB PWN BTN1
+Change Net Name : Old Net Name=NetD9_A New Net Name=NetD10_A
+Change Net Name : Old Net Name=NetD10_A New Net Name=NetD11_A
+Change Net Name : Old Net Name=NetD14_A New Net Name=NetD16_A
+Change Net Name : Old Net Name=NetD20_A New Net Name=NetD12_A
+Change Net Name : Old Net Name=NetD21_A New Net Name=NetD9_A
+Change Net Name : Old Net Name=NetD21_K New Net Name=NetD9_K
+Change Net Name : Old Net Name=NetFLASH MODE_1 New Net Name=NetFLASH MODE1_1
+Change Net Name : Old Net Name=NetR35_2 New Net Name=NetR34_2
+Change Net Name : Old Net Name=NetR40_1 New Net Name=NetR41_1
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component D27 Schottky
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component D28 Schottky
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component P6 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component R47 10K

@@ -1,0 +1,899 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD17\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12/11/2017</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">14:06:33</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:05</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc" class="file"><acronym title="C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc">C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">7</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">174</td></tr>
+</table>
+</td>
+</table><a name="IDIX0IBJ0KL2Z3GB10TUW1UBZELD5S0DBASDRLB1J1NHUFF3QR5DEF"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5YGZOOBYKWIFP2WV3HCQMHA2CC1MROG23EIK4GEH52WJ4GE5C2TM">7 Net Ties failed verification</a></td>
+<td class="column2">7</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">7</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB1NL41IJP3DMFEYDEH2UKJGRPNTNOHJ0QEEAC0KSTE0ZVLUDSO4N">Clearance Constraint (Gap=0.203mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTDFWGUZ1RSKTHPTYR3045B3GZKGMQYQ425SWJBHXIPXPMJEY3KFP">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">56</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5DSMB2YNHTK1NKWMA1GXJ3MBPKJXIBHDDC5KE5EAGWT4QCDUE2ZO">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXTT3V3JOARU3OIP0IDXLM25V5NAA42ZCEI1LBOPM0TE21URS2QHF">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWWEP0JCFEMVSDTLURDUPPY4DHLS40YPGJKA22FGYFBBFPODXYSLJ">Width Constraint (Min=0.152mm) (Max=0.762mm) (Preferred=0.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMBQYX5QAPSSBCFBX2YRIWIIGFJT0ZAMWSC30G2DDST5MBW222XKK">Power Plane Connect Rule(Relief Connect )(Expansion=0.3mm) (Conductor Width=0.3mm) (Air Gap=0.3mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMLSARKTNUNLKJGJKVDHNTNCISC3HGUYVH1JA5PGAVESJHPVT53OE">Minimum Annular Ring (Minimum=0.11mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID33OJ4NDDEOF5NVUVUC3C2K4SIHXYXIA1TYIRYAIWS40U0CPRXM2K">Hole Size Constraint (Min=0.3mm) (Max=6.35mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4H0WK3SME00UBICNTNWO3TBPNIRK0CD3ZDGZNALPQQHYKO13EWDP">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">28</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2M3OCPBXR5OKGOIK41NEU1QBOBUZ0AOARDKUUGCSDVU3T1RVI2E">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">74</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEYAE3ZGMK3Z4OC410U4CGP0YPINADKBGEZDVOXITBRUCEA4P0RRC">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID55XC13XJSOHYJK15RPLQNX5YIP0GARYFWXFIRKNKEDQ5Y2T3NEEB">Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) </a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXRIM1CCCQXCLD3BKEY1RNIFYFR5AIAMR3W5EFP0MFRSNKOIJ4SK">Height Constraint (Min=0mm) (Max=3mm) (Prefered=1mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">174</td>
+</tr>
+</table><br><a name="IDVB4NQZKP45N2IP5EJILK1FEHIAV3DA3UN3JXIWSZ3N3CCGMVSK"><h2>Warnings</h2></a><a name="ID5YGZOOBYKWIFP2WV3HCQMHA2CC1MROG23EIK4GEH52WJ4GE5C2TM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">7 Net Ties failed verification</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13443.505mil|Location2.X=13533.776mil|Location1.Y=15272.429mil|Location2.Y=15748.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13443.505mil|Location2.X=13533.776mil|Location1.Y=15272.429mil|Location2.Y=15748.189mil|Absolute=True">SMT Small Component BT_Rx (20.6mm,113.55mm) on Bottom Layer</acronym></a>, SMT Small Component BT_Rx (20.6mm,113.55mm) on Bottom Layer, has isolated copper</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13709.547mil|Location2.X=13851.771mil|Location1.Y=15274.399mil|Location2.Y=15758.032mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13709.547mil|Location2.X=13851.771mil|Location1.Y=15274.399mil|Location2.Y=15758.032mil|Absolute=True">SMT Small Component BT_Tx (28.7mm,113.6mm) on Bottom Layer</acronym></a>, SMT Small Component BT_Tx (28.7mm,113.6mm) on Bottom Layer, has isolated copper</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15239.927mil|Location2.X=15615.362mil|Location1.Y=13043.181mil|Location2.Y=13175.296mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15239.927mil|Location2.X=15615.362mil|Location1.Y=13043.181mil|Location2.Y=13175.296mil|Absolute=True">SMT Small Component DEMP1 (73.538mm,56.897mm) on Bottom Layer</acronym></a>, SMT Small Component DEMP1 (73.538mm,56.897mm) on Bottom Layer, has isolated copper</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15272.246mil|Location2.X=15718.039mil|Location1.Y=12730.142mil|Location2.Y=12912.961mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15272.246mil|Location2.X=15718.039mil|Location1.Y=12730.142mil|Location2.Y=12912.961mil|Absolute=True">SMT Small Component FILT1 (75.638mm,50.897mm) on Bottom Layer</acronym></a>, SMT Small Component FILT1 (75.638mm,50.897mm) on Bottom Layer, has isolated copper</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15423.071mil|Location2.X=15762.967mil|Location1.Y=11746.654mil|Location2.Y=11910.532mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15423.071mil|Location2.X=15762.967mil|Location1.Y=11746.654mil|Location2.Y=11910.532mil|Absolute=True">SMT Small Component V_SEL1 (72.75mm,23.5mm) on Top Layer</acronym></a>, SMT Small Component V_SEL1 (72.75mm,23.5mm) on Top Layer, has isolated copper</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12804.806mil|Location2.X=13308.464mil|Location1.Y=15270.461mil|Location2.Y=15822.794mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12804.806mil|Location2.X=13308.464mil|Location1.Y=15270.461mil|Location2.Y=15822.794mil|Absolute=True">SMT Small Component Wifi_Rx (14.9mm,113.5mm) on Bottom Layer</acronym></a>, SMT Small Component Wifi_Rx (14.9mm,113.5mm) on Bottom Layer, has isolated copper</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12817.52mil|Location2.X=13308.169mil|Location1.Y=15274.398mil|Location2.Y=15812.951mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12817.52mil|Location2.X=13308.169mil|Location1.Y=15274.398mil|Location2.Y=15812.951mil|Absolute=True">SMT Small Component Wifi_Tx (4.7mm,113.6mm) on Bottom Layer</acronym></a>, SMT Small Component Wifi_Tx (4.7mm,113.6mm) on Bottom Layer, has isolated copper</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDB1NL41IJP3DMFEYDEH2UKJGRPNTNOHJ0QEEAC0KSTE0ZVLUDSO4N"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.203mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17404.661mil|Location2.X=17413.911mil|Location1.Y=15808.843mil|Location2.Y=15821.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17404.661mil|Location2.X=17413.911mil|Location1.Y=15808.843mil|Location2.Y=15821.638mil|Absolute=True">Clearance Constraint: (0.111mm &lt; 0.203mm) Between Pad USB1-GND(120.45mm,124.975mm) on Top Layer And Pad USB1-1(119.8mm,125.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17527.034mil|Location2.X=17536.754mil|Location1.Y=15803.815mil|Location2.Y=15818.093mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17527.034mil|Location2.X=17536.754mil|Location1.Y=15803.815mil|Location2.Y=15818.093mil|Absolute=True">Clearance Constraint: (0.111mm &lt; 0.203mm) Between Pad USB1-VBUS(123.05mm,124.975mm) on Top Layer And Pad USB1-1(123.7mm,125.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTDFWGUZ1RSKTHPTYR3045B3GZKGMQYQ425SWJBHXIPXPMJEY3KFP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15059.109mil|Location2.X=15118.056mil|Location1.Y=11781.55mil|Location2.Y=11840.497mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15059.109mil|Location2.X=15118.056mil|Location1.Y=11781.55mil|Location2.Y=11840.497mil|Absolute=True">Short-Circuit Constraint: Between Via (61.25mm,24mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 383.25mm][Y = 300mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15206.747mil|Location2.X=15265.694mil|Location1.Y=11840.605mil|Location2.Y=11899.552mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15206.747mil|Location2.X=15265.694mil|Location1.Y=11840.605mil|Location2.Y=11899.552mil|Absolute=True">Short-Circuit Constraint: Between Via (65mm,25.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 387mm][Y = 301.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15206.747mil|Location2.X=15265.694mil|Location1.Y=11722.495mil|Location2.Y=11781.442mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15206.747mil|Location2.X=15265.694mil|Location1.Y=11722.495mil|Location2.Y=11781.442mil|Absolute=True">Short-Circuit Constraint: Between Via (65mm,22.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 387mm][Y = 298.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15147.692mil|Location2.X=15206.639mil|Location1.Y=11692.968mil|Location2.Y=11751.914mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15147.692mil|Location2.X=15206.639mil|Location1.Y=11692.968mil|Location2.Y=11751.914mil|Absolute=True">Short-Circuit Constraint: Between Via (63.5mm,21.75mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 385.5mm][Y = 297.75mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15236.275mil|Location2.X=15295.221mil|Location1.Y=11781.55mil|Location2.Y=11840.497mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15236.275mil|Location2.X=15295.221mil|Location1.Y=11781.55mil|Location2.Y=11840.497mil|Absolute=True">Short-Circuit Constraint: Between Via (65.75mm,24mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 387.75mm][Y = 300mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15088.637mil|Location2.X=15147.584mil|Location1.Y=11840.605mil|Location2.Y=11899.552mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15088.637mil|Location2.X=15147.584mil|Location1.Y=11840.605mil|Location2.Y=11899.552mil|Absolute=True">Short-Circuit Constraint: Between Via (62mm,25.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 384mm][Y = 301.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15088.637mil|Location2.X=15147.584mil|Location1.Y=11722.495mil|Location2.Y=11781.442mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15088.637mil|Location2.X=15147.584mil|Location1.Y=11722.495mil|Location2.Y=11781.442mil|Absolute=True">Short-Circuit Constraint: Between Via (62mm,22.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 384mm][Y = 298.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15147.692mil|Location2.X=15206.639mil|Location1.Y=11870.133mil|Location2.Y=11929.08mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15147.692mil|Location2.X=15206.639mil|Location1.Y=11870.133mil|Location2.Y=11929.08mil|Absolute=True">Short-Circuit Constraint: Between Via (63.5mm,26.25mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 385.5mm][Y = 302.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12874.07mil|Location2.X=12933.017mil|Location1.Y=12901.629mil|Location2.Y=12960.576mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12874.07mil|Location2.X=12933.017mil|Location1.Y=12901.629mil|Location2.Y=12960.576mil|Absolute=True">Short-Circuit Constraint: Between Via (5.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 327.75mm][Y = 328.45mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12992.18mil|Location2.X=13051.127mil|Location1.Y=12901.629mil|Location2.Y=12960.576mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12992.18mil|Location2.X=13051.127mil|Location1.Y=12901.629mil|Location2.Y=12960.576mil|Absolute=True">Short-Circuit Constraint: Between Via (8.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 330.75mm][Y = 328.45mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12844.542mil|Location2.X=12903.489mil|Location1.Y=12960.684mil|Location2.Y=13019.631mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12844.542mil|Location2.X=12903.489mil|Location1.Y=12960.684mil|Location2.Y=13019.631mil|Absolute=True">Short-Circuit Constraint: Between Via (5mm,53.95mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 327mm][Y = 329.95mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13021.708mil|Location2.X=13080.654mil|Location1.Y=12960.684mil|Location2.Y=13019.631mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13021.708mil|Location2.X=13080.654mil|Location1.Y=12960.684mil|Location2.Y=13019.631mil|Absolute=True">Short-Circuit Constraint: Between Via (9.5mm,53.95mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 331.5mm][Y = 329.95mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12933.125mil|Location2.X=12992.072mil|Location1.Y=13049.267mil|Location2.Y=13108.214mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12933.125mil|Location2.X=12992.072mil|Location1.Y=13049.267mil|Location2.Y=13108.214mil|Absolute=True">Short-Circuit Constraint: Between Via (7.25mm,56.2mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 329.25mm][Y = 332.2mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12933.125mil|Location2.X=12992.072mil|Location1.Y=12872.101mil|Location2.Y=12931.048mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12933.125mil|Location2.X=12992.072mil|Location1.Y=12872.101mil|Location2.Y=12931.048mil|Absolute=True">Short-Circuit Constraint: Between Via (7.25mm,51.7mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 329.25mm][Y = 327.7mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12874.07mil|Location2.X=12933.017mil|Location1.Y=13019.739mil|Location2.Y=13078.686mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12874.07mil|Location2.X=12933.017mil|Location1.Y=13019.739mil|Location2.Y=13078.686mil|Absolute=True">Short-Circuit Constraint: Between Via (5.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 327.75mm][Y = 331.45mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12992.18mil|Location2.X=13051.127mil|Location1.Y=13019.739mil|Location2.Y=13078.686mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12992.18mil|Location2.X=13051.127mil|Location1.Y=13019.739mil|Location2.Y=13078.686mil|Absolute=True">Short-Circuit Constraint: Between Via (8.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 330.75mm][Y = 331.45mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13927.219mil|Location2.X=13986.166mil|Location1.Y=15679.188mil|Location2.Y=15738.135mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13927.219mil|Location2.X=13986.166mil|Location1.Y=15679.188mil|Location2.Y=15738.135mil|Absolute=True">Short-Circuit Constraint: Between Via (32.5mm,123mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 354.5mm][Y = 399mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13838.637mil|Location2.X=13897.584mil|Location1.Y=15590.605mil|Location2.Y=15649.552mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13838.637mil|Location2.X=13897.584mil|Location1.Y=15590.605mil|Location2.Y=15649.552mil|Absolute=True">Short-Circuit Constraint: Between Via (30.25mm,120.75mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 352.25mm][Y = 396.75mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13927.219mil|Location2.X=13986.166mil|Location1.Y=15502.023mil|Location2.Y=15560.969mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13927.219mil|Location2.X=13986.166mil|Location1.Y=15502.023mil|Location2.Y=15560.969mil|Absolute=True">Short-Circuit Constraint: Between Via (32.5mm,118.5mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 354.5mm][Y = 394.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14015.802mil|Location2.X=14074.749mil|Location1.Y=15590.605mil|Location2.Y=15649.552mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14015.802mil|Location2.X=14074.749mil|Location1.Y=15590.605mil|Location2.Y=15649.552mil|Absolute=True">Short-Circuit Constraint: Between Via (34.75mm,120.75mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 356.75mm][Y = 396.75mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13986.275mil|Location2.X=14045.221mil|Location1.Y=15531.55mil|Location2.Y=15590.497mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13986.275mil|Location2.X=14045.221mil|Location1.Y=15531.55mil|Location2.Y=15590.497mil|Absolute=True">Short-Circuit Constraint: Between Via (34mm,119.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 356mm][Y = 395.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13868.164mil|Location2.X=13927.111mil|Location1.Y=15531.55mil|Location2.Y=15590.497mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13868.164mil|Location2.X=13927.111mil|Location1.Y=15531.55mil|Location2.Y=15590.497mil|Absolute=True">Short-Circuit Constraint: Between Via (31mm,119.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 353mm][Y = 395.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13986.275mil|Location2.X=14045.221mil|Location1.Y=15649.66mil|Location2.Y=15708.607mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13986.275mil|Location2.X=14045.221mil|Location1.Y=15649.66mil|Location2.Y=15708.607mil|Absolute=True">Short-Circuit Constraint: Between Via (34mm,122.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 356mm][Y = 398.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13868.164mil|Location2.X=13927.111mil|Location1.Y=15649.66mil|Location2.Y=15708.607mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13868.164mil|Location2.X=13927.111mil|Location1.Y=15649.66mil|Location2.Y=15708.607mil|Absolute=True">Short-Circuit Constraint: Between Via (31mm,122.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 353mm][Y = 398.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17598.479mil|Location2.X=17657.426mil|Location1.Y=12066.983mil|Location2.Y=12125.93mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17598.479mil|Location2.X=17657.426mil|Location1.Y=12066.983mil|Location2.Y=12125.93mil|Absolute=True">Short-Circuit Constraint: Between Via (125.75mm,31.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 447.75mm][Y = 307.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17598.479mil|Location2.X=17657.426mil|Location1.Y=11948.873mil|Location2.Y=12007.82mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17598.479mil|Location2.X=17657.426mil|Location1.Y=11948.873mil|Location2.Y=12007.82mil|Absolute=True">Short-Circuit Constraint: Between Via (125.75mm,28.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 447.75mm][Y = 304.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17568.952mil|Location2.X=17627.898mil|Location1.Y=12007.928mil|Location2.Y=12066.875mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17568.952mil|Location2.X=17627.898mil|Location1.Y=12007.928mil|Location2.Y=12066.875mil|Absolute=True">Short-Circuit Constraint: Between Via (125mm,29.75mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 447mm][Y = 305.75mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17657.534mil|Location2.X=17716.481mil|Location1.Y=11919.345mil|Location2.Y=11978.292mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17657.534mil|Location2.X=17716.481mil|Location1.Y=11919.345mil|Location2.Y=11978.292mil|Absolute=True">Short-Circuit Constraint: Between Via (127.25mm,27.5mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 449.25mm][Y = 303.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17746.117mil|Location2.X=17805.064mil|Location1.Y=12007.928mil|Location2.Y=12066.875mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17746.117mil|Location2.X=17805.064mil|Location1.Y=12007.928mil|Location2.Y=12066.875mil|Absolute=True">Short-Circuit Constraint: Between Via (129.5mm,29.75mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 451.5mm][Y = 305.75mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17657.534mil|Location2.X=17716.481mil|Location1.Y=12096.511mil|Location2.Y=12155.458mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17657.534mil|Location2.X=17716.481mil|Location1.Y=12096.511mil|Location2.Y=12155.458mil|Absolute=True">Short-Circuit Constraint: Between Via (127.25mm,32mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 449.25mm][Y = 308mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17716.589mil|Location2.X=17775.536mil|Location1.Y=12066.983mil|Location2.Y=12125.93mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17716.589mil|Location2.X=17775.536mil|Location1.Y=12066.983mil|Location2.Y=12125.93mil|Absolute=True">Short-Circuit Constraint: Between Via (128.75mm,31.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 450.75mm][Y = 307.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17716.589mil|Location2.X=17775.536mil|Location1.Y=11948.873mil|Location2.Y=12007.82mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17716.589mil|Location2.X=17775.536mil|Location1.Y=11948.873mil|Location2.Y=12007.82mil|Absolute=True">Short-Circuit Constraint: Between Via (128.75mm,28.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 450.75mm][Y = 304.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12874.07mil|Location2.X=12933.017mil|Location1.Y=14405.566mil|Location2.Y=14464.513mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12874.07mil|Location2.X=12933.017mil|Location1.Y=14405.566mil|Location2.Y=14464.513mil|Absolute=True">Short-Circuit Constraint: Between Via (5.75mm,90.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 327.75mm][Y = 366.65mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12992.18mil|Location2.X=13051.127mil|Location1.Y=14405.566mil|Location2.Y=14464.513mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12992.18mil|Location2.X=13051.127mil|Location1.Y=14405.566mil|Location2.Y=14464.513mil|Absolute=True">Short-Circuit Constraint: Between Via (8.75mm,90.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 330.75mm][Y = 366.65mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12933.125mil|Location2.X=12992.072mil|Location1.Y=14376.039mil|Location2.Y=14434.985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12933.125mil|Location2.X=12992.072mil|Location1.Y=14376.039mil|Location2.Y=14434.985mil|Absolute=True">Short-Circuit Constraint: Between Via (7.25mm,89.9mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 329.25mm][Y = 365.9mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12992.18mil|Location2.X=13051.127mil|Location1.Y=14523.676mil|Location2.Y=14582.623mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12992.18mil|Location2.X=13051.127mil|Location1.Y=14523.676mil|Location2.Y=14582.623mil|Absolute=True">Short-Circuit Constraint: Between Via (8.75mm,93.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 330.75mm][Y = 369.65mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12874.07mil|Location2.X=12933.017mil|Location1.Y=14523.676mil|Location2.Y=14582.623mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12874.07mil|Location2.X=12933.017mil|Location1.Y=14523.676mil|Location2.Y=14582.623mil|Absolute=True">Short-Circuit Constraint: Between Via (5.75mm,93.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 327.75mm][Y = 369.65mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12844.542mil|Location2.X=12903.489mil|Location1.Y=14464.621mil|Location2.Y=14523.568mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12844.542mil|Location2.X=12903.489mil|Location1.Y=14464.621mil|Location2.Y=14523.568mil|Absolute=True">Short-Circuit Constraint: Between Via (5mm,92.15mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 327mm][Y = 368.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13021.708mil|Location2.X=13080.654mil|Location1.Y=14464.621mil|Location2.Y=14523.568mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13021.708mil|Location2.X=13080.654mil|Location1.Y=14464.621mil|Location2.Y=14523.568mil|Absolute=True">Short-Circuit Constraint: Between Via (9.5mm,92.15mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 331.5mm][Y = 368.15mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12933.125mil|Location2.X=12992.072mil|Location1.Y=14553.204mil|Location2.Y=14612.151mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12933.125mil|Location2.X=12992.072mil|Location1.Y=14553.204mil|Location2.Y=14612.151mil|Absolute=True">Short-Circuit Constraint: Between Via (7.25mm,94.4mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 329.25mm][Y = 370.4mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17529.582mil|Location2.X=17588.528mil|Location1.Y=12960.684mil|Location2.Y=13019.631mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17529.582mil|Location2.X=17588.528mil|Location1.Y=12960.684mil|Location2.Y=13019.631mil|Absolute=True">Short-Circuit Constraint: Between Via (124mm,53.95mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 446mm][Y = 329.95mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17618.164mil|Location2.X=17677.111mil|Location1.Y=13049.267mil|Location2.Y=13108.214mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17618.164mil|Location2.X=17677.111mil|Location1.Y=13049.267mil|Location2.Y=13108.214mil|Absolute=True">Short-Circuit Constraint: Between Via (126.25mm,56.2mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 448.25mm][Y = 332.2mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17677.219mil|Location2.X=17736.166mil|Location1.Y=12901.629mil|Location2.Y=12960.576mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17677.219mil|Location2.X=17736.166mil|Location1.Y=12901.629mil|Location2.Y=12960.576mil|Absolute=True">Short-Circuit Constraint: Between Via (127.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 449.75mm][Y = 328.45mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17706.747mil|Location2.X=17765.694mil|Location1.Y=12960.684mil|Location2.Y=13019.631mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17706.747mil|Location2.X=17765.694mil|Location1.Y=12960.684mil|Location2.Y=13019.631mil|Absolute=True">Short-Circuit Constraint: Between Via (128.5mm,53.95mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 450.5mm][Y = 329.95mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17618.164mil|Location2.X=17677.111mil|Location1.Y=12872.102mil|Location2.Y=12931.048mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17618.164mil|Location2.X=17677.111mil|Location1.Y=12872.102mil|Location2.Y=12931.048mil|Absolute=True">Short-Circuit Constraint: Between Via (126.25mm,51.7mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 448.25mm][Y = 327.7mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17677.219mil|Location2.X=17736.166mil|Location1.Y=13019.739mil|Location2.Y=13078.686mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17677.219mil|Location2.X=17736.166mil|Location1.Y=13019.739mil|Location2.Y=13078.686mil|Absolute=True">Short-Circuit Constraint: Between Via (127.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 449.75mm][Y = 331.45mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17559.109mil|Location2.X=17618.056mil|Location1.Y=12901.629mil|Location2.Y=12960.576mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17559.109mil|Location2.X=17618.056mil|Location1.Y=12901.629mil|Location2.Y=12960.576mil|Absolute=True">Short-Circuit Constraint: Between Via (124.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 446.75mm][Y = 328.45mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17559.109mil|Location2.X=17618.056mil|Location1.Y=13019.739mil|Location2.Y=13078.686mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17559.109mil|Location2.X=17618.056mil|Location1.Y=13019.739mil|Location2.Y=13078.686mil|Absolute=True">Short-Circuit Constraint: Between Via (124.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 446.75mm][Y = 331.45mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16565.015mil|Location2.X=16623.962mil|Location1.Y=15147.692mil|Location2.Y=15206.639mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16565.015mil|Location2.X=16623.962mil|Location1.Y=15147.692mil|Location2.Y=15206.639mil|Absolute=True">Short-Circuit Constraint: Between Via (99.5mm,109.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 421.5mm][Y = 385.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16565.015mil|Location2.X=16623.962mil|Location1.Y=15029.582mil|Location2.Y=15088.529mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16565.015mil|Location2.X=16623.962mil|Location1.Y=15029.582mil|Location2.Y=15088.529mil|Absolute=True">Short-Circuit Constraint: Between Via (99.5mm,106.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 421.5mm][Y = 382.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16624.07mil|Location2.X=16683.017mil|Location1.Y=15000.054mil|Location2.Y=15059.001mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16624.07mil|Location2.X=16683.017mil|Location1.Y=15000.054mil|Location2.Y=15059.001mil|Absolute=True">Short-Circuit Constraint: Between Via (101mm,105.75mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 423mm][Y = 381.75mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16535.487mil|Location2.X=16594.434mil|Location1.Y=15088.637mil|Location2.Y=15147.584mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16535.487mil|Location2.X=16594.434mil|Location1.Y=15088.637mil|Location2.Y=15147.584mil|Absolute=True">Short-Circuit Constraint: Between Via (98.75mm,108mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 420.75mm][Y = 384mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16624.07mil|Location2.X=16683.017mil|Location1.Y=15177.219mil|Location2.Y=15236.166mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16624.07mil|Location2.X=16683.017mil|Location1.Y=15177.219mil|Location2.Y=15236.166mil|Absolute=True">Short-Circuit Constraint: Between Via (101mm,110.25mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 423mm][Y = 386.25mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16683.125mil|Location2.X=16742.072mil|Location1.Y=15147.692mil|Location2.Y=15206.639mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16683.125mil|Location2.X=16742.072mil|Location1.Y=15147.692mil|Location2.Y=15206.639mil|Absolute=True">Short-Circuit Constraint: Between Via (102.5mm,109.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 424.5mm][Y = 385.5mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.653mil|Location2.X=16771.599mil|Location1.Y=15088.637mil|Location2.Y=15147.584mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.653mil|Location2.X=16771.599mil|Location1.Y=15088.637mil|Location2.Y=15147.584mil|Absolute=True">Short-Circuit Constraint: Between Via (103.25mm,108mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 425.25mm][Y = 384mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16683.125mil|Location2.X=16742.072mil|Location1.Y=15029.582mil|Location2.Y=15088.529mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16683.125mil|Location2.X=16742.072mil|Location1.Y=15029.582mil|Location2.Y=15088.529mil|Absolute=True">Short-Circuit Constraint: Between Via (102.5mm,106.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 424.5mm][Y = 382.5mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID5DSMB2YNHTK1NKWMA1GXJ3MBPKJXIBHDDC5KE5EAGWT4QCDUE2ZO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15529.921mil|Location2.X=15729.921mil|Location1.Y=11937.401mil|Location2.Y=12147.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15529.921mil|Location2.X=15729.921mil|Location1.Y=11937.401mil|Location2.Y=12147.244mil|Absolute=True">Un-Routed Net Constraint: Net AGND Between Via (75mm,29.75mm) from Top Layer to Bottom Layer And Track (73.75mm,30mm)(76.747mm,30mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16094.31mil|Location2.X=16321.457mil|Location1.Y=12305.1mil|Location2.Y=12477.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16094.31mil|Location2.X=16321.457mil|Location1.Y=12305.1mil|Location2.Y=12477.953mil|Absolute=True">Un-Routed Net Constraint: Net DGND Between Via (90.025mm,38.4mm) from Top Layer to Bottom Layer And Track (87.293mm,37.047mm)(92.203mm,41.957mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16107.597mil|Location2.X=16387.401mil|Location1.Y=12318.387mil|Location2.Y=12438.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16107.597mil|Location2.X=16387.401mil|Location1.Y=12318.387mil|Location2.Y=12438.583mil|Absolute=True">Un-Routed Net Constraint: Net DGND Between Via (91.7mm,37.4mm) from Top Layer to Bottom Layer And Track (87.293mm,37.047mm)(92.203mm,41.957mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16941.634mil|Location2.X=17015.929mil|Location1.Y=12530.378mil|Location2.Y=12604.114mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16941.634mil|Location2.X=17015.929mil|Location1.Y=12530.378mil|Location2.Y=12604.114mil|Absolute=True">Un-Routed Net Constraint: Net DGND Between Pad C36-1(108.962mm,43.5mm) on Top Layer And Via (109.83mm,42.647mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID4H0WK3SME00UBICNTNWO3TBPNIRK0CD3ZDGZNALPQQHYKO13EWDP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15218.119mil|Location2.X=15229.539mil|Location1.Y=11851.977mil|Location2.Y=11863.227mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15218.119mil|Location2.X=15229.539mil|Location1.Y=11851.977mil|Location2.Y=11863.227mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (65mm,25.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15218.119mil|Location2.X=15229.369mil|Location1.Y=11758.82mil|Location2.Y=11770.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15218.119mil|Location2.X=15229.369mil|Location1.Y=11758.82mil|Location2.Y=11770.07mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (65mm,22.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15124.961mil|Location2.X=15136.211mil|Location1.Y=11851.977mil|Location2.Y=11863.227mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15124.961mil|Location2.X=15136.211mil|Location1.Y=11851.977mil|Location2.Y=11863.227mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (62mm,25.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15124.961mil|Location2.X=15136.382mil|Location1.Y=11758.82mil|Location2.Y=11770.07mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15124.961mil|Location2.X=15136.382mil|Location1.Y=11758.82mil|Location2.Y=11770.07mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (62mm,22.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12910.395mil|Location2.X=12921.815mil|Location1.Y=12937.954mil|Location2.Y=12949.204mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12910.395mil|Location2.X=12921.815mil|Location1.Y=12937.954mil|Location2.Y=12949.204mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (5.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13003.552mil|Location2.X=13014.802mil|Location1.Y=12937.954mil|Location2.Y=12949.204mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13003.552mil|Location2.X=13014.802mil|Location1.Y=12937.954mil|Location2.Y=12949.204mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (8.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12910.395mil|Location2.X=12921.645mil|Location1.Y=13031.111mil|Location2.Y=13042.361mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12910.395mil|Location2.X=12921.645mil|Location1.Y=13031.111mil|Location2.Y=13042.361mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (5.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13003.552mil|Location2.X=13014.972mil|Location1.Y=13031.111mil|Location2.Y=13042.361mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13003.552mil|Location2.X=13014.972mil|Location1.Y=13031.111mil|Location2.Y=13042.361mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (8.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13997.647mil|Location2.X=14008.897mil|Location1.Y=15567.875mil|Location2.Y=15579.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13997.647mil|Location2.X=14008.897mil|Location1.Y=15567.875mil|Location2.Y=15579.125mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (34mm,119.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13904.489mil|Location2.X=13915.909mil|Location1.Y=15567.875mil|Location2.Y=15579.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13904.489mil|Location2.X=13915.909mil|Location1.Y=15567.875mil|Location2.Y=15579.125mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (31mm,119.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13997.647mil|Location2.X=14009.067mil|Location1.Y=15661.032mil|Location2.Y=15672.282mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13997.647mil|Location2.X=14009.067mil|Location1.Y=15661.032mil|Location2.Y=15672.282mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (34mm,122.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13904.489mil|Location2.X=13915.739mil|Location1.Y=15661.032mil|Location2.Y=15672.282mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13904.489mil|Location2.X=13915.739mil|Location1.Y=15661.032mil|Location2.Y=15672.282mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (31mm,122.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17634.804mil|Location2.X=17646.054mil|Location1.Y=12078.355mil|Location2.Y=12089.605mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17634.804mil|Location2.X=17646.054mil|Location1.Y=12078.355mil|Location2.Y=12089.605mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (125.75mm,31.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17634.804mil|Location2.X=17646.224mil|Location1.Y=11985.198mil|Location2.Y=11996.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17634.804mil|Location2.X=17646.224mil|Location1.Y=11985.198mil|Location2.Y=11996.448mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (125.75mm,28.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17727.962mil|Location2.X=17739.382mil|Location1.Y=12078.355mil|Location2.Y=12089.605mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17727.962mil|Location2.X=17739.382mil|Location1.Y=12078.355mil|Location2.Y=12089.605mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (128.75mm,31.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17727.962mil|Location2.X=17739.212mil|Location1.Y=11985.198mil|Location2.Y=11996.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17727.962mil|Location2.X=17739.212mil|Location1.Y=11985.198mil|Location2.Y=11996.448mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (128.75mm,28.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12910.395mil|Location2.X=12921.815mil|Location1.Y=14441.891mil|Location2.Y=14453.141mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12910.395mil|Location2.X=12921.815mil|Location1.Y=14441.891mil|Location2.Y=14453.141mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (5.75mm,90.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13003.552mil|Location2.X=13014.802mil|Location1.Y=14441.891mil|Location2.Y=14453.141mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13003.552mil|Location2.X=13014.802mil|Location1.Y=14441.891mil|Location2.Y=14453.141mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (8.75mm,90.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13003.552mil|Location2.X=13014.972mil|Location1.Y=14535.048mil|Location2.Y=14546.298mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13003.552mil|Location2.X=13014.972mil|Location1.Y=14535.048mil|Location2.Y=14546.298mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (8.75mm,93.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12910.395mil|Location2.X=12921.645mil|Location1.Y=14535.048mil|Location2.Y=14546.298mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12910.395mil|Location2.X=12921.645mil|Location1.Y=14535.048mil|Location2.Y=14546.298mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (5.75mm,93.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17688.591mil|Location2.X=17699.841mil|Location1.Y=12937.954mil|Location2.Y=12949.204mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17688.591mil|Location2.X=17699.841mil|Location1.Y=12937.954mil|Location2.Y=12949.204mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (127.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17688.591mil|Location2.X=17700.012mil|Location1.Y=13031.111mil|Location2.Y=13042.361mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17688.591mil|Location2.X=17700.012mil|Location1.Y=13031.111mil|Location2.Y=13042.361mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (127.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17595.434mil|Location2.X=17606.854mil|Location1.Y=12937.954mil|Location2.Y=12949.204mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17595.434mil|Location2.X=17606.854mil|Location1.Y=12937.954mil|Location2.Y=12949.204mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (124.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17595.434mil|Location2.X=17606.684mil|Location1.Y=13031.111mil|Location2.Y=13042.361mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=17595.434mil|Location2.X=17606.684mil|Location1.Y=13031.111mil|Location2.Y=13042.361mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (124.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16601.339mil|Location2.X=16612.589mil|Location1.Y=15159.064mil|Location2.Y=15170.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16601.339mil|Location2.X=16612.589mil|Location1.Y=15159.064mil|Location2.Y=15170.314mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (99.5mm,109.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16601.339mil|Location2.X=16612.76mil|Location1.Y=15065.906mil|Location2.Y=15077.156mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16601.339mil|Location2.X=16612.76mil|Location1.Y=15065.906mil|Location2.Y=15077.156mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (99.5mm,106.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16694.497mil|Location2.X=16705.917mil|Location1.Y=15159.064mil|Location2.Y=15170.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16694.497mil|Location2.X=16705.917mil|Location1.Y=15159.064mil|Location2.Y=15170.314mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (102.5mm,109.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16694.497mil|Location2.X=16705.747mil|Location1.Y=15065.906mil|Location2.Y=15077.156mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16694.497mil|Location2.X=16705.747mil|Location1.Y=15065.906mil|Location2.Y=15077.156mil|Absolute=True">Hole To Hole Clearance Constraint: (0.146mm &lt; 0.254mm) Between Via (102.5mm,106.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID2M3OCPBXR5OKGOIK41NEU1QBOBUZ0AOARDKUUGCSDVU3T1RVI2E"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15378.233mil|Location2.X=15383.42mil|Location1.Y=12166.694mil|Location2.Y=12171.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15378.233mil|Location2.X=15383.42mil|Location1.Y=12166.694mil|Location2.Y=12171.881mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.1mm) Between Area Fill (68.674mm,33.086mm) (68.826mm,34.914mm) on Top Solder And Pad PSCK2-2(67.988mm,34mm) on Top Layer [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15384.296mil|Location2.X=15389.483mil|Location1.Y=12166.694mil|Location2.Y=12171.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15384.296mil|Location2.X=15389.483mil|Location1.Y=12166.694mil|Location2.Y=12171.881mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.1mm) Between Area Fill (68.674mm,33.086mm) (68.826mm,34.914mm) on Top Solder And Pad PSCK2-1(69.512mm,34mm) on Top Layer [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15378.233mil|Location2.X=15383.42mil|Location1.Y=12274.962mil|Location2.Y=12280.149mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15378.233mil|Location2.X=15383.42mil|Location1.Y=12274.962mil|Location2.Y=12280.149mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.1mm) Between Area Fill (68.674mm,35.836mm) (68.826mm,37.664mm) on Top Solder And Pad PSCK1-2(67.988mm,36.75mm) on Top Layer [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15384.296mil|Location2.X=15389.483mil|Location1.Y=12274.962mil|Location2.Y=12280.149mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15384.296mil|Location2.X=15389.483mil|Location1.Y=12274.962mil|Location2.Y=12280.149mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.1mm) Between Area Fill (68.674mm,35.836mm) (68.826mm,37.664mm) on Top Solder And Pad PSCK1-1(69.512mm,36.75mm) on Top Layer [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16477.72mil|Location2.X=16482.907mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16477.72mil|Location2.X=16482.907mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-31(97mm,42.543mm) on Top Layer And Pad U4-32(96.2mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16509.22mil|Location2.X=16514.407mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16509.22mil|Location2.X=16514.407mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-30(97.8mm,42.543mm) on Top Layer And Pad U4-31(97mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16540.715mil|Location2.X=16545.902mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16540.715mil|Location2.X=16545.902mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-29(98.6mm,42.543mm) on Top Layer And Pad U4-30(97.8mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16572.21mil|Location2.X=16577.397mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16572.21mil|Location2.X=16577.397mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-28(99.4mm,42.543mm) on Top Layer And Pad U4-29(98.6mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16603.705mil|Location2.X=16608.892mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16603.705mil|Location2.X=16608.892mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-27(100.2mm,42.543mm) on Top Layer And Pad U4-28(99.4mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16635.2mil|Location2.X=16640.387mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16635.2mil|Location2.X=16640.387mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-26(101mm,42.543mm) on Top Layer And Pad U4-27(100.2mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16666.7mil|Location2.X=16671.887mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16666.7mil|Location2.X=16671.887mil|Location1.Y=12509.517mil|Location2.Y=12514.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-25(101.8mm,42.543mm) on Top Layer And Pad U4-26(101mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12463.944mil|Location2.Y=12469.131mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12463.944mil|Location2.Y=12469.131mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-23(103.293mm,40.25mm) on Top Layer And Pad U4-24(103.293mm,41.05mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12432.444mil|Location2.Y=12437.631mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12432.444mil|Location2.Y=12437.631mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-22(103.293mm,39.45mm) on Top Layer And Pad U4-23(103.293mm,40.25mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12400.949mil|Location2.Y=12406.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12400.949mil|Location2.Y=12406.136mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-21(103.293mm,38.65mm) on Top Layer And Pad U4-22(103.293mm,39.45mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12369.454mil|Location2.Y=12374.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12369.454mil|Location2.Y=12374.641mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-20(103.293mm,37.85mm) on Top Layer And Pad U4-21(103.293mm,38.65mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12337.959mil|Location2.Y=12343.146mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12337.959mil|Location2.Y=12343.146mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-19(103.293mm,37.05mm) on Top Layer And Pad U4-20(103.293mm,37.85mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12306.464mil|Location2.Y=12311.651mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12306.464mil|Location2.Y=12311.651mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-18(103.293mm,36.25mm) on Top Layer And Pad U4-19(103.293mm,37.05mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12274.964mil|Location2.Y=12280.151mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16712.273mil|Location2.X=16717.46mil|Location1.Y=12274.964mil|Location2.Y=12280.151mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-17(103.293mm,35.45mm) on Top Layer And Pad U4-18(103.293mm,36.25mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16666.7mil|Location2.X=16671.887mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16666.7mil|Location2.X=16671.887mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-15(101mm,33.957mm) on Top Layer And Pad U4-16(101.8mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16635.2mil|Location2.X=16640.387mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16635.2mil|Location2.X=16640.387mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-14(100.2mm,33.957mm) on Top Layer And Pad U4-15(101mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16603.705mil|Location2.X=16608.892mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16603.705mil|Location2.X=16608.892mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-13(99.4mm,33.957mm) on Top Layer And Pad U4-14(100.2mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16572.21mil|Location2.X=16577.397mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16572.21mil|Location2.X=16577.397mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-12(98.6mm,33.957mm) on Top Layer And Pad U4-13(99.4mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16540.715mil|Location2.X=16545.902mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16540.715mil|Location2.X=16545.902mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-11(97.8mm,33.957mm) on Top Layer And Pad U4-12(98.6mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16509.22mil|Location2.X=16514.407mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16509.22mil|Location2.X=16514.407mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-10(97mm,33.957mm) on Top Layer And Pad U4-11(97.8mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16477.72mil|Location2.X=16482.907mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16477.72mil|Location2.X=16482.907mil|Location1.Y=12171.517mil|Location2.Y=12176.704mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-9(96.2mm,33.957mm) on Top Layer And Pad U4-10(97mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12274.964mil|Location2.Y=12280.151mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12274.964mil|Location2.Y=12280.151mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-7(94.707mm,36.25mm) on Top Layer And Pad U4-8(94.707mm,35.45mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12306.464mil|Location2.Y=12311.651mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12306.464mil|Location2.Y=12311.651mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-6(94.707mm,37.05mm) on Top Layer And Pad U4-7(94.707mm,36.25mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12337.959mil|Location2.Y=12343.146mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12337.959mil|Location2.Y=12343.146mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-5(94.707mm,37.85mm) on Top Layer And Pad U4-6(94.707mm,37.05mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12369.454mil|Location2.Y=12374.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12369.454mil|Location2.Y=12374.641mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-4(94.707mm,38.65mm) on Top Layer And Pad U4-5(94.707mm,37.85mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12400.949mil|Location2.Y=12406.136mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12400.949mil|Location2.Y=12406.136mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-3(94.707mm,39.45mm) on Top Layer And Pad U4-4(94.707mm,38.65mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12432.444mil|Location2.Y=12437.631mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12432.444mil|Location2.Y=12437.631mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-2(94.707mm,40.25mm) on Top Layer And Pad U4-3(94.707mm,39.45mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12463.944mil|Location2.Y=12469.131mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=16374.273mil|Location2.X=16379.46mil|Location1.Y=12463.944mil|Location2.Y=12469.131mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.1mm) Between Pad U4-1(94.707mm,41.05mm) on Top Layer And Pad U4-2(94.707mm,40.25mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15685.103mil|Location2.X=15690.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15685.103mil|Location2.X=15690.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-9(76.798mm,55.784mm) on Top Layer And Pad IC4-10(76.137mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15711.103mil|Location2.X=15716.29mil|Location1.Y=13036.387mil|Location2.Y=13041.574mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15711.103mil|Location2.X=15716.29mil|Location1.Y=13036.387mil|Location2.Y=13041.574mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-8(77.458mm,55.79mm) on Top Layer And Pad IC4-9(76.798mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15737.103mil|Location2.X=15742.29mil|Location1.Y=13036.387mil|Location2.Y=13041.574mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15737.103mil|Location2.X=15742.29mil|Location1.Y=13036.387mil|Location2.Y=13041.574mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-7(78.119mm,55.784mm) on Top Layer And Pad IC4-8(77.458mm,55.79mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15763.103mil|Location2.X=15768.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15763.103mil|Location2.X=15768.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-6(78.779mm,55.784mm) on Top Layer And Pad IC4-7(78.119mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15789.103mil|Location2.X=15794.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15789.103mil|Location2.X=15794.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-5(79.439mm,55.784mm) on Top Layer And Pad IC4-6(78.779mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15815.103mil|Location2.X=15820.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15815.103mil|Location2.X=15820.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-4(80.1mm,55.784mm) on Top Layer And Pad IC4-5(79.439mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15841.103mil|Location2.X=15846.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15841.103mil|Location2.X=15846.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-3(80.76mm,55.784mm) on Top Layer And Pad IC4-4(80.1mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15867.103mil|Location2.X=15872.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15867.103mil|Location2.X=15872.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-2(81.421mm,55.784mm) on Top Layer And Pad IC4-3(80.76mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15893.103mil|Location2.X=15898.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15893.103mil|Location2.X=15898.29mil|Location1.Y=13036.147mil|Location2.Y=13041.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-1(82.081mm,55.784mm) on Top Layer And Pad IC4-2(81.421mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15893.103mil|Location2.X=15898.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15893.103mil|Location2.X=15898.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-19(81.421mm,49.942mm) on Top Layer And Pad IC4-20(82.081mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15867.103mil|Location2.X=15872.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15867.103mil|Location2.X=15872.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-18(80.76mm,49.942mm) on Top Layer And Pad IC4-19(81.421mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15841.103mil|Location2.X=15846.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15841.103mil|Location2.X=15846.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-17(80.1mm,49.942mm) on Top Layer And Pad IC4-18(80.76mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15815.103mil|Location2.X=15820.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15815.103mil|Location2.X=15820.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-16(79.439mm,49.942mm) on Top Layer And Pad IC4-17(80.1mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15789.103mil|Location2.X=15794.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15789.103mil|Location2.X=15794.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-15(78.779mm,49.942mm) on Top Layer And Pad IC4-16(79.439mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15763.103mil|Location2.X=15768.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15763.103mil|Location2.X=15768.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-14(78.119mm,49.942mm) on Top Layer And Pad IC4-15(78.779mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15737.103mil|Location2.X=15742.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15737.103mil|Location2.X=15742.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-13(77.458mm,49.936mm) on Top Layer And Pad IC4-14(78.119mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15711.103mil|Location2.X=15716.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15711.103mil|Location2.X=15716.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-12(76.798mm,49.942mm) on Top Layer And Pad IC4-13(77.458mm,49.936mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15685.103mil|Location2.X=15690.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15685.103mil|Location2.X=15690.29mil|Location1.Y=12806.147mil|Location2.Y=12811.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad IC4-11(76.137mm,49.942mm) on Top Layer And Pad IC4-12(76.798mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15809.833mil|Location2.X=15815.02mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15809.833mil|Location2.X=15815.02mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-27(79.311mm,32.569mm) on Top Layer And Pad IC2-28(79.961mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15784.243mil|Location2.X=15789.43mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15784.243mil|Location2.X=15789.43mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-26(78.661mm,32.569mm) on Top Layer And Pad IC2-27(79.311mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15758.653mil|Location2.X=15763.84mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15758.653mil|Location2.X=15763.84mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-25(78.011mm,32.569mm) on Top Layer And Pad IC2-26(78.661mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15733.063mil|Location2.X=15738.25mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15733.063mil|Location2.X=15738.25mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-24(77.361mm,32.569mm) on Top Layer And Pad IC2-25(78.011mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15707.473mil|Location2.X=15712.66mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15707.473mil|Location2.X=15712.66mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-23(76.711mm,32.569mm) on Top Layer And Pad IC2-24(77.361mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15681.883mil|Location2.X=15687.07mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15681.883mil|Location2.X=15687.07mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-22(76.061mm,32.569mm) on Top Layer And Pad IC2-23(76.711mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15630.693mil|Location2.X=15635.88mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15630.693mil|Location2.X=15635.88mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-20(74.76mm,32.569mm) on Top Layer And Pad IC2-21(75.41mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15605.103mil|Location2.X=15610.29mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15605.103mil|Location2.X=15610.29mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-19(74.111mm,32.569mm) on Top Layer And Pad IC2-20(74.76mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15579.513mil|Location2.X=15584.7mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15579.513mil|Location2.X=15584.7mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-18(73.461mm,32.569mm) on Top Layer And Pad IC2-19(74.111mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15553.923mil|Location2.X=15559.11mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15553.923mil|Location2.X=15559.11mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-17(72.811mm,32.569mm) on Top Layer And Pad IC2-18(73.461mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15528.333mil|Location2.X=15533.52mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15528.333mil|Location2.X=15533.52mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-16(72.161mm,32.569mm) on Top Layer And Pad IC2-17(72.811mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15502.743mil|Location2.X=15507.93mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15502.743mil|Location2.X=15507.93mil|Location1.Y=12118.246mil|Location2.Y=12123.433mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-15(71.511mm,32.569mm) on Top Layer And Pad IC2-16(72.161mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15502.743mil|Location2.X=15507.93mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15502.743mil|Location2.X=15507.93mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-13(72.161mm,38.369mm) on Top Layer And Pad IC2-14(71.511mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15528.333mil|Location2.X=15533.52mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15528.333mil|Location2.X=15533.52mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-12(72.811mm,38.369mm) on Top Layer And Pad IC2-13(72.161mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15553.923mil|Location2.X=15559.11mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15553.923mil|Location2.X=15559.11mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-11(73.461mm,38.369mm) on Top Layer And Pad IC2-12(72.811mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15579.513mil|Location2.X=15584.7mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15579.513mil|Location2.X=15584.7mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-10(74.111mm,38.369mm) on Top Layer And Pad IC2-11(73.461mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15605.103mil|Location2.X=15610.29mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15605.103mil|Location2.X=15610.29mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-9(74.76mm,38.369mm) on Top Layer And Pad IC2-10(74.111mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15630.693mil|Location2.X=15635.88mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15630.693mil|Location2.X=15635.88mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-8(75.41mm,38.369mm) on Top Layer And Pad IC2-9(74.76mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15681.883mil|Location2.X=15687.07mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15681.883mil|Location2.X=15687.07mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-6(76.711mm,38.369mm) on Top Layer And Pad IC2-7(76.061mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15707.473mil|Location2.X=15712.66mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15707.473mil|Location2.X=15712.66mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-5(77.361mm,38.369mm) on Top Layer And Pad IC2-6(76.711mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15733.063mil|Location2.X=15738.25mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15733.063mil|Location2.X=15738.25mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-4(78.011mm,38.369mm) on Top Layer And Pad IC2-5(77.361mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15758.653mil|Location2.X=15763.84mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15758.653mil|Location2.X=15763.84mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-3(78.661mm,38.369mm) on Top Layer And Pad IC2-4(78.011mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15784.243mil|Location2.X=15789.43mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15784.243mil|Location2.X=15789.43mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-2(79.311mm,38.369mm) on Top Layer And Pad IC2-3(78.661mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15809.833mil|Location2.X=15815.02mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15809.833mil|Location2.X=15815.02mil|Location1.Y=12346.586mil|Location2.Y=12351.773mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.1mm &lt; 0.1mm) Between Pad IC2-1(79.961mm,38.369mm) on Top Layer And Pad IC2-2(79.311mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID55XC13XJSOHYJK15RPLQNX5YIP0GARYFWXFIRKNKEDQ5Y2T3NEEB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) </th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13075.939mil|Location2.X=13083.605mil|Location1.Y=14358.371mil|Location2.Y=14366.038mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13075.939mil|Location2.X=13083.605mil|Location1.Y=14358.371mil|Location2.Y=14366.038mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between SOIC Component U6-H-Bridge (16.876mm,84.655mm) on Top Layer And Small Component HOLE6-M3 Mounting Hole (7.25mm,92.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14172.348mil|Location2.X=14180.014mil|Location1.Y=11303.321mil|Location2.Y=11310.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14172.348mil|Location2.X=14180.014mil|Location1.Y=11303.321mil|Location2.Y=11310.987mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between SIP Component IN_1-Input 1 (40.7mm,3.6mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14172.348mil|Location2.X=14180.014mil|Location1.Y=11602.544mil|Location2.Y=11610.211mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14172.348mil|Location2.X=14180.014mil|Location1.Y=11602.544mil|Location2.Y=11610.211mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between Small Component S1-SEL_1_LED (41.23mm,15.5mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12826.875mil|Location2.X=12834.542mil|Location1.Y=13118.214mil|Location2.Y=13125.881mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12826.875mil|Location2.X=12834.542mil|Location1.Y=13118.214mil|Location2.Y=13125.881mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between Small Component HOLE2-M3 Mounting Hole (7.25mm,53.95mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12896.265mil|Location2.X=12903.932mil|Location1.Y=13628.879mil|Location2.Y=13636.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12896.265mil|Location2.X=12903.932mil|Location1.Y=13628.879mil|Location2.Y=13636.546mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between SMT Small Component R17-10K (6.361mm,68.81mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12827.368mil|Location2.X=12835.034mil|Location1.Y=13628.879mil|Location2.Y=13636.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12827.368mil|Location2.X=12835.034mil|Location1.Y=13628.879mil|Location2.Y=13636.546mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between SMT Small Component R16-10K (4.611mm,68.81mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13023.242mil|Location2.X=13030.908mil|Location1.Y=13644.808mil|Location2.Y=13652.475mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13023.242mil|Location2.X=13030.908mil|Location1.Y=13644.808mil|Location2.Y=13652.475mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between SMT Small Component D8 (8.161mm,69.01mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13006.934mil|Location2.X=13014.6mil|Location1.Y=13702.86mil|Location2.Y=13710.526mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13006.934mil|Location2.X=13014.6mil|Location1.Y=13702.86mil|Location2.Y=13710.526mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between SMT Small Component Q1-P-MOSFET DMP3160L-7 (9.035mm,72.716mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14084.749mil|Location2.X=14092.416mil|Location1.Y=15484.355mil|Location2.Y=15492.022mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14084.749mil|Location2.X=14092.416mil|Location1.Y=15484.355mil|Location2.Y=15492.022mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between SIP Component U5-HM-11 BREAKOUT (28.6mm,115.77mm) on Top Layer And Small Component HOLE1-M3 Mounting Hole (32.5mm,120.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14135.243mil|Location2.X=14142.91mil|Location1.Y=15381.912mil|Location2.Y=15389.579mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14135.243mil|Location2.X=14142.91mil|Location1.Y=15381.912mil|Location2.Y=15389.579mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between SIP Component J3-USB Power (45.5mm,123.25mm) on Top Layer And SIP Component U5-HM-11 BREAKOUT (28.6mm,115.77mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

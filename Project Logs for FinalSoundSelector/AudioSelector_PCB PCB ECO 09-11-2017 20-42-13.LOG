@@ -1,0 +1,6 @@
+Added Component: Designator=S2(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

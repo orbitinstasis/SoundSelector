@@ -1,0 +1,230 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\benka\Dropbox\FinalSoundSelector\AudioSelector_PCB.PcbDoc
+Date     : 12/11/2017
+Time     : 14:06:33
+
+WARNING: 7 Net Ties failed verification
+   SMT Small Component BT_Rx (20.6mm,113.55mm) on Bottom Layer, SMT Small Component BT_Rx (20.6mm,113.55mm) on Bottom Layer, has isolated copper
+   SMT Small Component BT_Tx (28.7mm,113.6mm) on Bottom Layer, SMT Small Component BT_Tx (28.7mm,113.6mm) on Bottom Layer, has isolated copper
+   SMT Small Component DEMP1 (73.538mm,56.897mm) on Bottom Layer, SMT Small Component DEMP1 (73.538mm,56.897mm) on Bottom Layer, has isolated copper
+   SMT Small Component FILT1 (75.638mm,50.897mm) on Bottom Layer, SMT Small Component FILT1 (75.638mm,50.897mm) on Bottom Layer, has isolated copper
+   SMT Small Component V_SEL1 (72.75mm,23.5mm) on Top Layer, SMT Small Component V_SEL1 (72.75mm,23.5mm) on Top Layer, has isolated copper
+   SMT Small Component Wifi_Rx (14.9mm,113.5mm) on Bottom Layer, SMT Small Component Wifi_Rx (14.9mm,113.5mm) on Bottom Layer, has isolated copper
+   SMT Small Component Wifi_Tx (4.7mm,113.6mm) on Bottom Layer, SMT Small Component Wifi_Tx (4.7mm,113.6mm) on Bottom Layer, has isolated copper
+
+Processing Rule : Clearance Constraint (Gap=0.203mm) (All),(All)
+   Violation between Clearance Constraint: (0.111mm < 0.203mm) Between Pad USB1-GND(120.45mm,124.975mm) on Top Layer And Pad USB1-1(119.8mm,125.75mm) on Multi-Layer 
+   Violation between Clearance Constraint: (0.111mm < 0.203mm) Between Pad USB1-VBUS(123.05mm,124.975mm) on Top Layer And Pad USB1-1(123.7mm,125.75mm) on Multi-Layer 
+Rule Violations :2
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Short-Circuit Constraint: Between Via (61.25mm,24mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 383.25mm][Y = 300mm]
+   Violation between Short-Circuit Constraint: Between Via (65mm,25.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 387mm][Y = 301.5mm]
+   Violation between Short-Circuit Constraint: Between Via (65mm,22.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 387mm][Y = 298.5mm]
+   Violation between Short-Circuit Constraint: Between Via (63.5mm,21.75mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 385.5mm][Y = 297.75mm]
+   Violation between Short-Circuit Constraint: Between Via (65.75mm,24mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 387.75mm][Y = 300mm]
+   Violation between Short-Circuit Constraint: Between Via (62mm,25.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 384mm][Y = 301.5mm]
+   Violation between Short-Circuit Constraint: Between Via (62mm,22.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 384mm][Y = 298.5mm]
+   Violation between Short-Circuit Constraint: Between Via (63.5mm,26.25mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer Location : [X = 385.5mm][Y = 302.25mm]
+   Violation between Short-Circuit Constraint: Between Via (5.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 327.75mm][Y = 328.45mm]
+   Violation between Short-Circuit Constraint: Between Via (8.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 330.75mm][Y = 328.45mm]
+   Violation between Short-Circuit Constraint: Between Via (5mm,53.95mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 327mm][Y = 329.95mm]
+   Violation between Short-Circuit Constraint: Between Via (9.5mm,53.95mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 331.5mm][Y = 329.95mm]
+   Violation between Short-Circuit Constraint: Between Via (7.25mm,56.2mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 329.25mm][Y = 332.2mm]
+   Violation between Short-Circuit Constraint: Between Via (7.25mm,51.7mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 329.25mm][Y = 327.7mm]
+   Violation between Short-Circuit Constraint: Between Via (5.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 327.75mm][Y = 331.45mm]
+   Violation between Short-Circuit Constraint: Between Via (8.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer Location : [X = 330.75mm][Y = 331.45mm]
+   Violation between Short-Circuit Constraint: Between Via (32.5mm,123mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 354.5mm][Y = 399mm]
+   Violation between Short-Circuit Constraint: Between Via (30.25mm,120.75mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 352.25mm][Y = 396.75mm]
+   Violation between Short-Circuit Constraint: Between Via (32.5mm,118.5mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 354.5mm][Y = 394.5mm]
+   Violation between Short-Circuit Constraint: Between Via (34.75mm,120.75mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 356.75mm][Y = 396.75mm]
+   Violation between Short-Circuit Constraint: Between Via (34mm,119.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 356mm][Y = 395.25mm]
+   Violation between Short-Circuit Constraint: Between Via (31mm,119.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 353mm][Y = 395.25mm]
+   Violation between Short-Circuit Constraint: Between Via (34mm,122.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 356mm][Y = 398.25mm]
+   Violation between Short-Circuit Constraint: Between Via (31mm,122.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer Location : [X = 353mm][Y = 398.25mm]
+   Violation between Short-Circuit Constraint: Between Via (125.75mm,31.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 447.75mm][Y = 307.25mm]
+   Violation between Short-Circuit Constraint: Between Via (125.75mm,28.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 447.75mm][Y = 304.25mm]
+   Violation between Short-Circuit Constraint: Between Via (125mm,29.75mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 447mm][Y = 305.75mm]
+   Violation between Short-Circuit Constraint: Between Via (127.25mm,27.5mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 449.25mm][Y = 303.5mm]
+   Violation between Short-Circuit Constraint: Between Via (129.5mm,29.75mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 451.5mm][Y = 305.75mm]
+   Violation between Short-Circuit Constraint: Between Via (127.25mm,32mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 449.25mm][Y = 308mm]
+   Violation between Short-Circuit Constraint: Between Via (128.75mm,31.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 450.75mm][Y = 307.25mm]
+   Violation between Short-Circuit Constraint: Between Via (128.75mm,28.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer Location : [X = 450.75mm][Y = 304.25mm]
+   Violation between Short-Circuit Constraint: Between Via (5.75mm,90.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 327.75mm][Y = 366.65mm]
+   Violation between Short-Circuit Constraint: Between Via (8.75mm,90.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 330.75mm][Y = 366.65mm]
+   Violation between Short-Circuit Constraint: Between Via (7.25mm,89.9mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 329.25mm][Y = 365.9mm]
+   Violation between Short-Circuit Constraint: Between Via (8.75mm,93.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 330.75mm][Y = 369.65mm]
+   Violation between Short-Circuit Constraint: Between Via (5.75mm,93.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 327.75mm][Y = 369.65mm]
+   Violation between Short-Circuit Constraint: Between Via (5mm,92.15mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 327mm][Y = 368.15mm]
+   Violation between Short-Circuit Constraint: Between Via (9.5mm,92.15mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 331.5mm][Y = 368.15mm]
+   Violation between Short-Circuit Constraint: Between Via (7.25mm,94.4mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer Location : [X = 329.25mm][Y = 370.4mm]
+   Violation between Short-Circuit Constraint: Between Via (124mm,53.95mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 446mm][Y = 329.95mm]
+   Violation between Short-Circuit Constraint: Between Via (126.25mm,56.2mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 448.25mm][Y = 332.2mm]
+   Violation between Short-Circuit Constraint: Between Via (127.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 449.75mm][Y = 328.45mm]
+   Violation between Short-Circuit Constraint: Between Via (128.5mm,53.95mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 450.5mm][Y = 329.95mm]
+   Violation between Short-Circuit Constraint: Between Via (126.25mm,51.7mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 448.25mm][Y = 327.7mm]
+   Violation between Short-Circuit Constraint: Between Via (127.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 449.75mm][Y = 331.45mm]
+   Violation between Short-Circuit Constraint: Between Via (124.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 446.75mm][Y = 328.45mm]
+   Violation between Short-Circuit Constraint: Between Via (124.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer Location : [X = 446.75mm][Y = 331.45mm]
+   Violation between Short-Circuit Constraint: Between Via (99.5mm,109.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 421.5mm][Y = 385.5mm]
+   Violation between Short-Circuit Constraint: Between Via (99.5mm,106.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 421.5mm][Y = 382.5mm]
+   Violation between Short-Circuit Constraint: Between Via (101mm,105.75mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 423mm][Y = 381.75mm]
+   Violation between Short-Circuit Constraint: Between Via (98.75mm,108mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 420.75mm][Y = 384mm]
+   Violation between Short-Circuit Constraint: Between Via (101mm,110.25mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 423mm][Y = 386.25mm]
+   Violation between Short-Circuit Constraint: Between Via (102.5mm,109.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 424.5mm][Y = 385.5mm]
+   Violation between Short-Circuit Constraint: Between Via (103.25mm,108mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 425.25mm][Y = 384mm]
+   Violation between Short-Circuit Constraint: Between Via (102.5mm,106.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer Location : [X = 424.5mm][Y = 382.5mm]
+Rule Violations :56
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net AGND Between Via (75mm,29.75mm) from Top Layer to Bottom Layer And Track (73.75mm,30mm)(76.747mm,30mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net DGND Between Via (90.025mm,38.4mm) from Top Layer to Bottom Layer And Track (87.293mm,37.047mm)(92.203mm,41.957mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net DGND Between Via (91.7mm,37.4mm) from Top Layer to Bottom Layer And Track (87.293mm,37.047mm)(92.203mm,41.957mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net DGND Between Pad C36-1(108.962mm,43.5mm) on Top Layer And Via (109.83mm,42.647mm) from Top Layer to Bottom Layer 
+Rule Violations :4
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=0.762mm) (Preferred=0.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.3mm) (Conductor Width=0.3mm) (Air Gap=0.3mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.11mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.35mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (65mm,25.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (65mm,22.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (62mm,25.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (62mm,22.5mm) from Top Layer to Bottom Layer And Pad HOLE3-0(63.5mm,24mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (5.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (8.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (5.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (8.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE2-0(7.25mm,53.95mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (34mm,119.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (31mm,119.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (34mm,122.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (31mm,122.25mm) from Top Layer to Bottom Layer And Pad HOLE1-0(32.5mm,120.75mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (125.75mm,31.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (125.75mm,28.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (128.75mm,31.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (128.75mm,28.25mm) from Top Layer to Bottom Layer And Pad HOLE5-0(127.25mm,29.75mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (5.75mm,90.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (8.75mm,90.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (8.75mm,93.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (5.75mm,93.65mm) from Top Layer to Bottom Layer And Pad HOLE6-0(7.25mm,92.15mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (127.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (127.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (124.75mm,52.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (124.75mm,55.45mm) from Top Layer to Bottom Layer And Pad HOLE7-0(126.25mm,53.95mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (99.5mm,109.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (99.5mm,106.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (102.5mm,109.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer 
+   Violation between Hole To Hole Clearance Constraint: (0.146mm < 0.254mm) Between Via (102.5mm,106.5mm) from Top Layer to Bottom Layer And Pad HOLE8-0(101mm,108mm) on Multi-Layer 
+Rule Violations :28
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.002mm < 0.1mm) Between Area Fill (68.674mm,33.086mm) (68.826mm,34.914mm) on Top Solder And Pad PSCK2-2(67.988mm,34mm) on Top Layer [Top Solder] Mask Sliver [0.002mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.002mm < 0.1mm) Between Area Fill (68.674mm,33.086mm) (68.826mm,34.914mm) on Top Solder And Pad PSCK2-1(69.512mm,34mm) on Top Layer [Top Solder] Mask Sliver [0.002mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.002mm < 0.1mm) Between Area Fill (68.674mm,35.836mm) (68.826mm,37.664mm) on Top Solder And Pad PSCK1-2(67.988mm,36.75mm) on Top Layer [Top Solder] Mask Sliver [0.002mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.002mm < 0.1mm) Between Area Fill (68.674mm,35.836mm) (68.826mm,37.664mm) on Top Solder And Pad PSCK1-1(69.512mm,36.75mm) on Top Layer [Top Solder] Mask Sliver [0.002mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-31(97mm,42.543mm) on Top Layer And Pad U4-32(96.2mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-30(97.8mm,42.543mm) on Top Layer And Pad U4-31(97mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-29(98.6mm,42.543mm) on Top Layer And Pad U4-30(97.8mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-28(99.4mm,42.543mm) on Top Layer And Pad U4-29(98.6mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-27(100.2mm,42.543mm) on Top Layer And Pad U4-28(99.4mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-26(101mm,42.543mm) on Top Layer And Pad U4-27(100.2mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-25(101.8mm,42.543mm) on Top Layer And Pad U4-26(101mm,42.543mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-23(103.293mm,40.25mm) on Top Layer And Pad U4-24(103.293mm,41.05mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-22(103.293mm,39.45mm) on Top Layer And Pad U4-23(103.293mm,40.25mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-21(103.293mm,38.65mm) on Top Layer And Pad U4-22(103.293mm,39.45mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-20(103.293mm,37.85mm) on Top Layer And Pad U4-21(103.293mm,38.65mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-19(103.293mm,37.05mm) on Top Layer And Pad U4-20(103.293mm,37.85mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-18(103.293mm,36.25mm) on Top Layer And Pad U4-19(103.293mm,37.05mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-17(103.293mm,35.45mm) on Top Layer And Pad U4-18(103.293mm,36.25mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-15(101mm,33.957mm) on Top Layer And Pad U4-16(101.8mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-14(100.2mm,33.957mm) on Top Layer And Pad U4-15(101mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-13(99.4mm,33.957mm) on Top Layer And Pad U4-14(100.2mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-12(98.6mm,33.957mm) on Top Layer And Pad U4-13(99.4mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-11(97.8mm,33.957mm) on Top Layer And Pad U4-12(98.6mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-10(97mm,33.957mm) on Top Layer And Pad U4-11(97.8mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-9(96.2mm,33.957mm) on Top Layer And Pad U4-10(97mm,33.957mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-7(94.707mm,36.25mm) on Top Layer And Pad U4-8(94.707mm,35.45mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-6(94.707mm,37.05mm) on Top Layer And Pad U4-7(94.707mm,36.25mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-5(94.707mm,37.85mm) on Top Layer And Pad U4-6(94.707mm,37.05mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-4(94.707mm,38.65mm) on Top Layer And Pad U4-5(94.707mm,37.85mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-3(94.707mm,39.45mm) on Top Layer And Pad U4-4(94.707mm,38.65mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-2(94.707mm,40.25mm) on Top Layer And Pad U4-3(94.707mm,39.45mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.041mm < 0.1mm) Between Pad U4-1(94.707mm,41.05mm) on Top Layer And Pad U4-2(94.707mm,40.25mm) on Top Layer [Top Solder] Mask Sliver [0.041mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-9(76.798mm,55.784mm) on Top Layer And Pad IC4-10(76.137mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-8(77.458mm,55.79mm) on Top Layer And Pad IC4-9(76.798mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-7(78.119mm,55.784mm) on Top Layer And Pad IC4-8(77.458mm,55.79mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-6(78.779mm,55.784mm) on Top Layer And Pad IC4-7(78.119mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-5(79.439mm,55.784mm) on Top Layer And Pad IC4-6(78.779mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-4(80.1mm,55.784mm) on Top Layer And Pad IC4-5(79.439mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-3(80.76mm,55.784mm) on Top Layer And Pad IC4-4(80.1mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-2(81.421mm,55.784mm) on Top Layer And Pad IC4-3(80.76mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-1(82.081mm,55.784mm) on Top Layer And Pad IC4-2(81.421mm,55.784mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-19(81.421mm,49.942mm) on Top Layer And Pad IC4-20(82.081mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-18(80.76mm,49.942mm) on Top Layer And Pad IC4-19(81.421mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-17(80.1mm,49.942mm) on Top Layer And Pad IC4-18(80.76mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-16(79.439mm,49.942mm) on Top Layer And Pad IC4-17(80.1mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-15(78.779mm,49.942mm) on Top Layer And Pad IC4-16(79.439mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-14(78.119mm,49.942mm) on Top Layer And Pad IC4-15(78.779mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-13(77.458mm,49.936mm) on Top Layer And Pad IC4-14(78.119mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-12(76.798mm,49.942mm) on Top Layer And Pad IC4-13(77.458mm,49.936mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad IC4-11(76.137mm,49.942mm) on Top Layer And Pad IC4-12(76.798mm,49.942mm) on Top Layer [Top Solder] Mask Sliver [0.06mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-27(79.311mm,32.569mm) on Top Layer And Pad IC2-28(79.961mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-26(78.661mm,32.569mm) on Top Layer And Pad IC2-27(79.311mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-25(78.011mm,32.569mm) on Top Layer And Pad IC2-26(78.661mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-24(77.361mm,32.569mm) on Top Layer And Pad IC2-25(78.011mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-23(76.711mm,32.569mm) on Top Layer And Pad IC2-24(77.361mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-22(76.061mm,32.569mm) on Top Layer And Pad IC2-23(76.711mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-20(74.76mm,32.569mm) on Top Layer And Pad IC2-21(75.41mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-19(74.111mm,32.569mm) on Top Layer And Pad IC2-20(74.76mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-18(73.461mm,32.569mm) on Top Layer And Pad IC2-19(74.111mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-17(72.811mm,32.569mm) on Top Layer And Pad IC2-18(73.461mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-16(72.161mm,32.569mm) on Top Layer And Pad IC2-17(72.811mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-15(71.511mm,32.569mm) on Top Layer And Pad IC2-16(72.161mm,32.569mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-13(72.161mm,38.369mm) on Top Layer And Pad IC2-14(71.511mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-12(72.811mm,38.369mm) on Top Layer And Pad IC2-13(72.161mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-11(73.461mm,38.369mm) on Top Layer And Pad IC2-12(72.811mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-10(74.111mm,38.369mm) on Top Layer And Pad IC2-11(73.461mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-9(74.76mm,38.369mm) on Top Layer And Pad IC2-10(74.111mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-8(75.41mm,38.369mm) on Top Layer And Pad IC2-9(74.76mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-6(76.711mm,38.369mm) on Top Layer And Pad IC2-7(76.061mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-5(77.361mm,38.369mm) on Top Layer And Pad IC2-6(76.711mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-4(78.011mm,38.369mm) on Top Layer And Pad IC2-5(77.361mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-3(78.661mm,38.369mm) on Top Layer And Pad IC2-4(78.011mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-2(79.311mm,38.369mm) on Top Layer And Pad IC2-3(78.661mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.1mm < 0.1mm) Between Pad IC2-1(79.961mm,38.369mm) on Top Layer And Pad IC2-2(79.311mm,38.369mm) on Top Layer [Top Solder] Mask Sliver [0.1mm]
+Rule Violations :74
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between SOIC Component U6-H-Bridge (16.876mm,84.655mm) on Top Layer And Small Component HOLE6-M3 Mounting Hole (7.25mm,92.15mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between SIP Component IN_1-Input 1 (40.7mm,3.6mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between Small Component S1-SEL_1_LED (41.23mm,15.5mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between Small Component HOLE2-M3 Mounting Hole (7.25mm,53.95mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between SMT Small Component R17-10K (6.361mm,68.81mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between SMT Small Component R16-10K (4.611mm,68.81mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between SMT Small Component D8 (8.161mm,69.01mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between SMT Small Component Q1-P-MOSFET DMP3160L-7 (9.035mm,72.716mm) on Top Layer And Component R42-Motorised Pot (15.5mm,3.6mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between SIP Component U5-HM-11 BREAKOUT (28.6mm,115.77mm) on Top Layer And Small Component HOLE1-M3 Mounting Hole (32.5mm,120.75mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.254mm) Between SIP Component J3-USB Power (45.5mm,123.25mm) on Top Layer And SIP Component U5-HM-11 BREAKOUT (28.6mm,115.77mm) on Top Layer 
+Rule Violations :10
+
+Processing Rule : Height Constraint (Min=0mm) (Max=3mm) (Prefered=1mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 174
+Time Elapsed        : 00:00:05

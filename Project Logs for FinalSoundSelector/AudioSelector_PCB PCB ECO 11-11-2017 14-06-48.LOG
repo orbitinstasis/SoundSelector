@@ -1,0 +1,13 @@
+Added Component: Designator=HOLE5(M3 STAND OFF - RING)
+Add component. Clean all parameters for all variants
+Added Component: Designator=HOLE6(M3 STAND OFF - RING)
+Add component. Clean all parameters for all variants
+Added Component: Designator=HOLE7(M3 STAND OFF - RING)
+Add component. Clean all parameters for all variants
+Added Component: Designator=HOLE8(M3 STAND OFF - RING)
+Add component. Clean all parameters for all variants
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component HOLE5 M3 Mounting Hole
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component HOLE6 M3 Mounting Hole
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component HOLE7 M3 Mounting Hole
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component HOLE8 M3 Mounting Hole
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 

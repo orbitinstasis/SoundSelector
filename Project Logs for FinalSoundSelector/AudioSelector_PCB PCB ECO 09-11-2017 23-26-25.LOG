@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=BT_Rx_JMP1 NewDesignator=BT_Rx
+Change Component Designator: OldDesignator=BT_Tx_JMP1 NewDesignator=BT_Tx
+Change Component Designator: OldDesignator=Wifi_Rx_JMP1 NewDesignator=Wifi_Rx
+Change Component Designator: OldDesignator=Wifi_Tx_JMP1 NewDesignator=Wifi_Tx
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

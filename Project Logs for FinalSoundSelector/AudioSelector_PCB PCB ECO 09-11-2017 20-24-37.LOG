@@ -1,0 +1,6 @@
+Removed Member From Class: ClassName=Final_Audio_Selector_board Member=Sleep Btn
+Change Component Designator: OldDesignator=Sleep NewDesignator=SLEEP LED
+Change Component Designator: OldDesignator=Sleep Btn NewDesignator=SLEEP
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component SLEEP LED Sleep LED (Mute)

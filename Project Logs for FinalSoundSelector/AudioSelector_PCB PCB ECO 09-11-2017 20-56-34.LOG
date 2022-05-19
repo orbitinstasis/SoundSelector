@@ -1,0 +1,3 @@
+Change Component Designator: OldDesignator=Digital In1 NewDesignator=I2S
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=MCU_Rx Pin=BT_Rx_JMP1-3
+Added Pin To Net: NetName=MCU_Tx Pin=BT_Tx_JMP1-3
+Added Pin To Net: NetName=MCU_Rx Pin=Wifi_Rx_JMP1-3
+Added Pin To Net: NetName=MCU_Tx Pin=Wifi_Tx_JMP1-3
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component P3 Header 4
+Added Room: Name=Final_Audio_Selector_board

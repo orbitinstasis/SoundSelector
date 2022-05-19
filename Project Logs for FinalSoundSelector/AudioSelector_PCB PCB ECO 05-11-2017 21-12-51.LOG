@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=USB_SWITCH_1 Pin=J2-1-GND
+Added Pin To Net: NetName=DGND Pin=Q5-2
+Added Pin To Net: NetName=DGND Pin=USB PWN BTN-1
+Added Pin To Net: NetName=USB_SWITCH_1_2 Pin=J2-1-GND
+Added Net: Name=USB_SWITCH_1_2
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component P3 Header 4

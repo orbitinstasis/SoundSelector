@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=IR Rx Pullout1 NewDesignator=IR Rx
+Change Component Designator: OldDesignator=Power Btn1 NewDesignator=PWR
+Change Component Designator: OldDesignator=USB PWN BTN1 NewDesignator=USB
+Change Net Name : Old Net Name=NetPower Btn1_2 New Net Name=NetPWR_2
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

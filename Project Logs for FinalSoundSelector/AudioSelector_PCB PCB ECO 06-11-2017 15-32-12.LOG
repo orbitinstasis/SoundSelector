@@ -1,0 +1,81 @@
+Removed Pin From Net: NetName=DGND Pin=S2-1
+Removed Pin From Net: NetName=IR_LEARN Pin=S2-3
+Removed Pin From Net: NetName=DGND Pin=S3-3
+Removed Pin From Net: NetName=DGND Pin=S4-1
+Removed Pin From Net: NetName=DTR Pin=S4-3
+Removed Member From Class: ClassName=Final_Audio_Selector_board Member=S2
+Removed Member From Class: ClassName=Final_Audio_Selector_board Member=S3
+Removed Member From Class: ClassName=Final_Audio_Selector_board Member=S4
+Added Component: Designator=FLASH MODE(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Component: Designator=IR LEARN(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Component: Designator=K1(EC2 RELAY)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K2(EC2 RELAY)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K3(EC2 RELAY)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K4(EC2 RELAY)
+Add component. Clean all parameters for all variants
+Added Component: Designator=K5(EC2 RELAY)
+Add component. Clean all parameters for all variants
+Added Component: Designator=MCU RESET(TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "PROD_ID"; Value = "CONN-10672"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SF_SKU"; Value = "COM-10791"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=DGND Pin=FLASH MODE-2
+Added Pin To Net: NetName=DGND Pin=IR LEARN-1
+Added Pin To Net: NetName=IR_LEARN Pin=IR LEARN-2
+Added Pin To Net: NetName=SEL_1 Pin=K1-1
+Added Pin To Net: NetName=IN_R Pin=K1-4
+Added Pin To Net: NetName=I1R Pin=K1-5
+Added Pin To Net: NetName=I1L Pin=K1-8
+Added Pin To Net: NetName=IN_L Pin=K1-9
+Added Pin To Net: NetName=SEL_COM Pin=K1-12
+Added Pin To Net: NetName=SEL_2 Pin=K2-1
+Added Pin To Net: NetName=IN_R Pin=K2-4
+Added Pin To Net: NetName=I2R Pin=K2-5
+Added Pin To Net: NetName=I2L Pin=K2-8
+Added Pin To Net: NetName=IN_L Pin=K2-9
+Added Pin To Net: NetName=SEL_COM Pin=K2-12
+Added Pin To Net: NetName=SEL_3 Pin=K3-1
+Added Pin To Net: NetName=IN_R Pin=K3-4
+Added Pin To Net: NetName=I3R Pin=K3-5
+Added Pin To Net: NetName=I3L Pin=K3-8
+Added Pin To Net: NetName=IN_L Pin=K3-9
+Added Pin To Net: NetName=SEL_COM Pin=K3-12
+Added Pin To Net: NetName=SCK Pin=K4-1
+Added Pin To Net: NetName=IN_R Pin=K4-4
+Added Pin To Net: NetName=I4R Pin=K4-5
+Added Pin To Net: NetName=I4L Pin=K4-8
+Added Pin To Net: NetName=IN_L Pin=K4-9
+Added Pin To Net: NetName=SEL_COM Pin=K4-12
+Added Pin To Net: NetName=OUTPUT_SEL Pin=K5-1
+Added Pin To Net: NetName=O1R Pin=K5-3
+Added Pin To Net: NetName=OUT_R Pin=K5-4
+Added Pin To Net: NetName=O2R Pin=K5-5
+Added Pin To Net: NetName=O2L Pin=K5-8
+Added Pin To Net: NetName=OUT_L Pin=K5-9
+Added Pin To Net: NetName=O1L Pin=K5-10
+Added Pin To Net: NetName=SEL_COM Pin=K5-12
+Added Pin To Net: NetName=DGND Pin=MCU RESET-1
+Added Pin To Net: NetName=DTR Pin=MCU RESET-2
+Added Pin To Net: NetName=NetFLASH MODE_1 Pin=FLASH MODE-1
+Added Pin To Net: NetName=NetFLASH MODE_1 Pin=U2-GPIO0
+Added Net: Name=NetFLASH MODE_1
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component D20 Schottky
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component D21 Schottky
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component FLASH MODE 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component IR LEARN 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component K1 Selection 1
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component K2 Selection 2
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component K3 Selection 3
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component K4 DAC Selection
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component K5 Output Selector
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component MCU RESET 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component P3 Header 4

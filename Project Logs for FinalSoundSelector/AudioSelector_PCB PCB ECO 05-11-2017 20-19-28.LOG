@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=DGND Pin=U1-1
+Removed Pin From Net: NetName=NetPF1_1 Pin=U1-3
+Removed Pin From Net: NetName=5V Pin=U1-4
+Added Pin To Net: NetName=NetPF1_1 Pin=U1-1
+Added Pin To Net: NetName=5V Pin=U1-3
+Added Pin To Net: NetName=DGND Pin=U1-4
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component P3 Header 4

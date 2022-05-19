@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=MCU_RESET Pin=U5-RST
+Added Pin To Net: NetName=BT_RX Pin=U5-RX
+Added Pin To Net: NetName=BT_TX Pin=U5-TX
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component P3 Header 4

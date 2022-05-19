@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=DGND Pin=Q2-2
+Removed Pin From Net: NetName=DGND Pin=Q4-2
+Removed Pin From Net: NetName=DGND Pin=Q6-2
+Removed Pin From Net: NetName=PC PWR SW 1 Pin=Q6-3
+Change Component Footprint: Designator=Q4 Old Footprint=SOT23-3 New Footprint=TO-92-GOOD
+Change Component Footprint: Designator=Q6 Old Footprint=SOT23-3 New Footprint=TO-92-GOOD
+Change Component Comment : Designator=Q2 Old Comment=2N3904 EQV SOT23-3 New Comment=2N3904
+Change Component Comment : Designator=Q1 Old Comment=P-MOSFET New Comment=P-MOSFET DMP3160L-7
+Added Pin To Net: NetName=DGND Pin=Q2-1
+Added Pin To Net: NetName=DGND Pin=Q4-1
+Added Pin To Net: NetName=PC PWR SW 1 Pin=Q6-1
+Added Pin To Net: NetName=DGND Pin=Q6-3
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-2
+Added Pin To Net: NetName=NetQ2_2 Pin=R16-1
+Added Net: Name=NetQ2_2
+Added Pin To Net: NetName=NetQ4_2 Pin=Q4-2
+Added Pin To Net: NetName=NetQ4_2 Pin=R20-1
+Added Net: Name=NetQ4_2
+Added Pin To Net: NetName=NetQ6_2 Pin=Q6-2
+Added Pin To Net: NetName=NetQ6_2 Pin=R23-1
+Added Net: Name=NetQ6_2
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component S2 SEL_2_LED

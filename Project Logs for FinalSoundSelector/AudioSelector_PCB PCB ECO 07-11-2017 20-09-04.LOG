@@ -1,0 +1,2 @@
+Added Pin To Net: NetName=MCU_RESET Pin=J6-5
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

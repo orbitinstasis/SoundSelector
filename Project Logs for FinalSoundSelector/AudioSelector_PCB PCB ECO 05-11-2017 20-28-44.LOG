@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=I4R Pin=IN_4-RING
+Removed Pin From Net: NetName=AGND Pin=IN_4-RSH
+Removed Pin From Net: NetName=AGND Pin=IN_4-SLEEVE
+Removed Pin From Net: NetName=I4L Pin=IN_4-TIP
+Removed Pin From Net: NetName=AGND Pin=IN_4-TSH
+Removed Member From Class: ClassName=Final_Audio_Selector_board Member=IN_4
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component P3 Header 4

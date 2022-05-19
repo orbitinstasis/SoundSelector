@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [FinalSoundSelector.PrjPcb]
+   Generated File[AudioSelector_PCB.TXT]
+   Generated File[AudioSelector_PCB-RectHoles.TXT]
+   Generated File[AudioSelector_PCB.LDP]
+   Generated File[AudioSelector_PCB.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 14:08:05 On 12/11/2017

@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=FLASH MODE1 NewDesignator=FLASH MD
+Change Component Designator: OldDesignator=IR LEARN1 NewDesignator=IR LEARN
+Change Component Designator: OldDesignator=MCU RESET1 NewDesignator=RESET
+Change Net Name : Old Net Name=NetFLASH MODE1_1 New Net Name=NetFLASH MD_1
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=PC PWR SW 1 Pin=PCPWR-1
+Removed Pin From Net: NetName=DGND Pin=PCPWR-2
+Change Component DesignItemId : Designator=PCPWR Old DesignItemId=MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE-KIT New DesignItemId=Header 3
+Change Component Footprint: Designator=PCPWR Old Footprint=HDR1X2 New Footprint=HDR1X3
+Change Component Footprint: Designator=J4 Old Footprint=MOLEX-1X2_LOCK New Footprint=MY DUAL SCREW TERMINAL
+Change Component Description : Designator=PCPWR Old Description= New Description=Header, 3-Pin
+Change Component Library : Designator=PCPWR Old Library=SparkFun-Switches.IntLib New Library=Miscellaneous Connectors.IntLib
+Change component parameters: Designator = "PCPWR"; Footprint = "HDR1X3"; UniqueID = "\DHGMQWVW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=DGND Pin=PCPWR-1
+Added Pin To Net: NetName=PC PWR SW 1 Pin=PCPWR-3
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

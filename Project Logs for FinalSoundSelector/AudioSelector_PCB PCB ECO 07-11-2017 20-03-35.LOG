@@ -1,0 +1,2 @@
+Change Component Designator: OldDesignator=PC PWR BUTTON1 NewDesignator=PCPWR
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

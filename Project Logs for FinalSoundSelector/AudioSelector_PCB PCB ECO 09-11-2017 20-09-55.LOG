@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=J6 Old Footprint=2X3_LOCK New Footprint=2X3-NS
+Change Component Footprint: Designator=FLASH MODE1 Old Footprint=TACTILE_SWITCH_SMD_5.2MM New Footprint=SMD Tactile Switch Button Momentary
+Change Component Footprint: Designator=IR LEARN1 Old Footprint=TACTILE_SWITCH_SMD_5.2MM New Footprint=SMD Tactile Switch Button Momentary
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

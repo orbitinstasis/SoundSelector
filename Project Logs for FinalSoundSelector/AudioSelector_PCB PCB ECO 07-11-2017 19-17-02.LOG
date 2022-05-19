@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=5V Pin=P3-4
+Removed Pin From Net: NetName=5V Pin=P4-4
+Change Component Designator: OldDesignator=PWR NewDesignator=Power Btn1
+Change Component Designator: OldDesignator=SLEEP NewDesignator=Sleep Btn
+Change Component Designator: OldDesignator=USB SW NewDesignator=USB PWN BTN1
+Added Pin To Net: NetName=V_In Pin=P3-4
+Added Pin To Net: NetName=V_In Pin=P4-4
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Power Btn1 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Sleep Btn Select Btn

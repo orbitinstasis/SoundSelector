@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=DTR Pin=C40-1
+Removed Pin From Net: NetName=MCU_RESET Pin=C40-2
+Removed Pin From Net: NetName=DTR Pin=MCU RESET1-3
+Added Pin To Net: NetName=MCU_RESET Pin=C40-1
+Added Pin To Net: NetName=DTR Pin=C40-2
+Added Pin To Net: NetName=MCU_RESET Pin=MCU RESET1-3
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component Pwr DAC Power blue

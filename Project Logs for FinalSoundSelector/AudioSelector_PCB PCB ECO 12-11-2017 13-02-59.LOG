@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=J5 NewDesignator=PROG
+Change Component Designator: OldDesignator=J6 NewDesignator=ICSP
+Change Component Designator: OldDesignator=P5 NewDesignator=I2C
+Change Component Designator: OldDesignator=P6 NewDesignator=IO
+Change Component Designator: OldDesignator=TP2 NewDesignator=PWR_TP

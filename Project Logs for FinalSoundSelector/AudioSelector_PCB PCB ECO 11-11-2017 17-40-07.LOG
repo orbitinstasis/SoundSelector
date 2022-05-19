@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=MCU_Tx Pin=BT_Rx-1
+Removed Pin From Net: NetName=MCU_Rx Pin=BT_Rx-3
+Removed Pin From Net: NetName=MCU_Rx Pin=BT_Tx-1
+Removed Pin From Net: NetName=MCU_Tx Pin=BT_Tx-3
+Removed Pin From Net: NetName=3V3_COMM Pin=R26-1
+Removed Pin From Net: NetName=CH_PD Pin=R26-2
+Removed Pin From Net: NetName=BT_RX Pin=U5-RX
+Added Component: Designator=R4(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Component: Designator=R48(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESC"; Value = "470R / 1 % /  0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MPN"; Value = "CRCW0603470RFKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "OC_MOUSER"; Value = "71-CRCW0603-470-E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PACKAGE"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Resistor"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=MCU_Rx Pin=BT_Rx-1
+Added Pin To Net: NetName=MCU_Tx Pin=BT_Rx-3
+Added Pin To Net: NetName=MCU_Tx Pin=BT_Tx-1
+Added Pin To Net: NetName=MCU_Rx Pin=BT_Tx-3
+Added Pin To Net: NetName=BT_RX Pin=R4-2
+Added Pin To Net: NetName=DGND Pin=R26-1
+Added Pin To Net: NetName=Wifi_RX Pin=R26-2
+Added Pin To Net: NetName=BT_RX Pin=R48-1
+Added Pin To Net: NetName=DGND Pin=R48-2
+Added Pin To Net: NetName=NetR4_1 Pin=R4-1
+Added Pin To Net: NetName=NetR4_1 Pin=U5-RX
+Added Net: Name=NetR4_1
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component R4 10K
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component R48 20K

@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=D4 NewDesignator=Pwr
+Change Component Designator: OldDesignator=D6 NewDesignator=Sleep
+Change Component Designator: OldDesignator=D12 NewDesignator=Out
+Change Component Designator: OldDesignator=D16 NewDesignator=Pwr
+Change Net Name : Old Net Name=NetD4_A New Net Name=NetPwr_A
+Change Net Name : Old Net Name=NetD6_A New Net Name=NetR14_2
+Change Net Name : Old Net Name=NetD12_A New Net Name=NetOut_A
+Change Net Name : Old Net Name=NetD16_A New Net Name=NetPwr_A

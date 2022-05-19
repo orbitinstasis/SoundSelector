@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=DGND Pin=DEMP1-3
+Change Component Designator: OldDesignator=AUDIO_OUT NewDesignator=AUDIO_OUT1
+Added Pin To Net: NetName=AGND Pin=DEMP1-3
+Added Pin To Net: NetName=DTR Pin=FLASH MD-1
+Added Pin To Net: NetName=DTR Pin=U2-GPIO0
+Added Member To Class: ClassName=Final_Audio_Selector_board Member=Component PWR 
